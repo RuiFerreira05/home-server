@@ -1147,3 +1147,16 @@
 [2026-01-23T03:50:52.341Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
 [2026-01-23T03:54:27.449Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
 [2026-01-23T03:54:30.435Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T04:42:44.823Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":7.8678131103515625e-05}
+[2026-01-23T04:43:16.646Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":8.296966552734375e-05}
+[2026-01-23T04:43:26.375Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":0.0001125335693359375}
+[2026-01-23T04:43:37.120Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":0.0001373291015625}
+[2026-01-23T15:03:26.729Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":5.5551528930664062e-05}
+[2026-01-23T15:06:49.230Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":0.00015783309936523438}
+[2026-01-23T15:07:04.596Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":5.7220458984375e-05}
+[2026-01-23T15:07:13.225Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":0.00014662742614746094}
+[2026-01-23T15:07:25.695Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":6.5088272094726562e-05}
+[2026-01-23T15:07:52.213Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":7.152557373046875e-05}
+[2026-01-23T15:09:03.369Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T15:09:05.440Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T15:09:10.884Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
