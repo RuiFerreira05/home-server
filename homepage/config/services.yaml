@@ -54,7 +54,7 @@
             type: pihole
             url: http://pihole
             version: 6 # required if running v6 or higher, defaults to 5
-            key: {{HOMEPAGE_VAR_PIHOLE_KEY}} # optional, in v6 can be your password or app password
+            # key: {{HOMEPAGE_VAR_PIHOLE_KEY}} # optional, in v6 can be your password or app password
 
     - Nginx Proxy Manager:
         icon: nginx-proxy-manager.svg

@@ -1056,3 +1056,94 @@
 [2026-01-23T02:49:47.098Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
 [2026-01-23T02:49:49.773Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
 [2026-01-23T02:49:49.890Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:14:11.206Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:14:11.214Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:14:11.330Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:14:20.066Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:14:20.252Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:14:20.266Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:17:18.165Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:17:18.320Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:17:18.854Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:17:21.958Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:17:21.962Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:17:22.074Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:17:29.366Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:17:29.504Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:17:29.524Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:17:38.023Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:17:38.158Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:17:38.177Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:19:19.442Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:19:20.407Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:19:20.421Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:19:47.615Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:19:47.754Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:19:47.771Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:20:02.679Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:20:03.572Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:20:03.596Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:21:36.057Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:21:37.061Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:21:39.029Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:21:39.031Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:21:39.153Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:30:29.342Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:30:30.166Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:30:30.181Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:30:44.422Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:30:44.561Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:30:44.578Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:31:04.760Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:31:05.736Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:31:05.748Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:31:11.825Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:31:11.964Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:31:11.975Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:31:22.440Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:31:23.330Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:31:23.340Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:34:27.436Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:34:27.574Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:34:27.588Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:38:17.278Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:38:17.421Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:38:18.132Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:41:15.001Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:41:15.170Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:41:15.189Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:41:18.092Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:41:18.093Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:41:18.282Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:43:55.374Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:43:56.217Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:43:56.232Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:44:08.844Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:44:08.987Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:44:09.695Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:44:11.799Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:44:11.804Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:44:11.917Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:46:06.777Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:46:06.940Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:46:06.959Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:46:17.082Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:46:17.962Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:46:17.978Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:47:46.769Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:47:46.925Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:47:46.946Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:49:02.068Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:49:02.206Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:49:02.762Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:49:46.298Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:49:46.309Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:49:48.218Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:49:48.329Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:50:32.566Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:50:32.569Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:50:52.221Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T03:50:52.224Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:50:52.341Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T03:54:27.449Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-23T03:54:30.435Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
