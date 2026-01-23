@@ -1052,3 +1052,7 @@
 [2026-01-23T02:40:18.474Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
 [2026-01-23T02:40:33.543Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
 [2026-01-23T02:40:34.511Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:49:46.957Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:49:47.098Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:49:49.773Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:49:49.890Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
