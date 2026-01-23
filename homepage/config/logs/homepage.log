@@ -1,0 +1,1054 @@
+[2026-01-22T03:43:48.740Z] info: kubernetes.yaml was copied to the config folder
+[2026-01-22T03:44:03.603Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.784Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.792Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.798Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.817Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.824Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.833Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.842Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.852Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.861Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.867Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:03.874Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:10.907Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:10.911Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:18.383Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:44:18.388Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T03:45:49.943Z] info: docker.yaml was copied to the config folder
+[2026-01-22T03:45:49.945Z] info: services.yaml was copied to the config folder
+[2026-01-22T03:45:49.946Z] info: bookmarks.yaml was copied to the config folder
+[2026-01-22T03:45:49.946Z] info: proxmox.yaml was copied to the config folder
+[2026-01-22T03:45:49.960Z] info: widgets.yaml was copied to the config folder
+[2026-01-22T03:45:49.961Z] info: custom.css was copied to the config folder
+[2026-01-22T03:45:49.962Z] info: custom.js was copied to the config folder
+[2026-01-22T04:09:37.965Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:09:37.975Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:09:38.384Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:09:44.208Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:16:53.379Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:16:53.384Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:16:53.669Z] error: <dockerStatusService> Error: connect EACCES /var/run/docker.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+    at PipeConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-22T04:16:53.672Z] error: <dockerStatsService> Error: connect EACCES /var/run/docker.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+    at PipeConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-22T04:16:53.708Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:19:18.767Z] error: <dockerStatsService> Error: connect EACCES /var/run/docker.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+    at PipeConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-22T04:19:18.796Z] error: <dockerStatusService> Error: connect EACCES /var/run/docker.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+    at PipeConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-22T04:19:18.852Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:19:19.107Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:19:19.352Z] error: <service-helpers> Error getting services from Docker server 'my-docker': [Error: connect EACCES /var/run/docker.sock] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '/var/run/docker.sock'
+}
+[2026-01-22T04:19:19.379Z] error: <dockerStatusService> Error: connect EACCES /var/run/docker.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+    at PipeConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-22T04:19:19.380Z] error: <dockerStatsService> Error: connect EACCES /var/run/docker.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+    at PipeConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-22T13:31:12.212Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:31:12.226Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:31:12.227Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:31:17.857Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:31:17.860Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:31:17.861Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:32:56.179Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:32:56.181Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:32:56.182Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:33:58.205Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:33:58.207Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:33:58.208Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:39:33.186Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:39:33.197Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:39:33.198Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:39:34.113Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:39:34.116Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:39:34.117Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:43:31.611Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:43:31.613Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:43:31.614Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:43:59.623Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:43:59.625Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:43:59.625Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:44:09.183Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/1/docker/containers/json...
+[2026-01-22T13:44:09.186Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:44:09.186Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/1/docker/containers/json?all=1
+[2026-01-22T13:44:09.653Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/1/docker/containers/json...
+[2026-01-22T13:44:09.655Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:44:09.655Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/1/docker/containers/json?all=1
+[2026-01-22T13:44:16.016Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/1/docker/containers/json...
+[2026-01-22T13:44:16.017Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:44:16.018Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/1/docker/containers/json?all=1
+[2026-01-22T13:44:36.285Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:44:36.286Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:44:36.287Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:44:36.681Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:44:36.682Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:44:36.682Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:45:57.317Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:45:57.318Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:45:57.319Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:48:58.782Z] error: <httpProxy> Error calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:48:58.784Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.1.1:9443
+      at <unknown> (Error: connect ECONNREFUSED 127.0.1.1:9443) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.1.1',
+    port: 9443
+  }
+]
+[2026-01-22T13:48:58.784Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://ubuntu-server:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:49:20.627Z] error: <httpProxy> Error calling https://localhost:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:49:20.629Z] error: <httpProxy> [ 500, [AggregateError: ] { code: 'ECONNREFUSED' } ]
+[2026-01-22T13:49:20.629Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://localhost:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T13:49:21.001Z] error: <httpProxy> Error calling https://localhost:9443/api/endpoints/3/docker/containers/json...
+[2026-01-22T13:49:21.002Z] error: <httpProxy> [ 500, [AggregateError: ] { code: 'ECONNREFUSED' } ]
+[2026-01-22T13:49:21.002Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://localhost:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-22T20:14:08.330Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.543Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.547Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.552Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.559Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.564Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.569Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.575Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.582Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.588Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.595Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.601Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.606Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.612Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.621Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:08.813Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:14:13.328Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.745Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.911Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.917Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.921Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.925Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.930Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.935Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.939Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.944Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.948Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.953Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.958Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.962Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.968Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.972Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.976Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.981Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.986Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.991Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:22.995Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:23.006Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:27.220Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:29.371Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:29.380Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:42.743Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:42.747Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:42.756Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:44.624Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:51.792Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:51.799Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:51.812Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:58.346Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:58.349Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:23:58.356Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:01.135Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.051Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.122Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.126Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.129Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.134Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.138Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.143Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.148Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.153Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.157Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.174Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.180Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.185Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.189Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.194Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.198Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.203Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.207Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.211Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.216Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.220Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:02.229Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:06.313Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:29.600Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:29.603Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:29.609Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.849Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.852Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.880Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.945Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.949Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.953Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.958Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.962Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.967Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.972Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.977Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.984Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.991Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:36.996Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.000Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.004Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.010Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.014Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.018Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.022Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.027Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.032Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.037Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:37.045Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:50.089Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:24:50.092Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.535Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.581Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.589Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.597Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.607Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.618Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.626Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.635Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.649Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.673Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.684Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.703Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:21.731Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.881Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.954Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.959Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.964Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.970Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.976Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.981Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.986Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.994Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:23.998Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.003Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.007Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.016Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.792Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.858Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.862Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.865Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.872Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.877Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.882Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.887Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.892Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.896Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.901Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.905Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:25:24.915Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.432Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.467Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.572Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.648Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.656Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.665Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.673Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.682Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.692Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.706Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.713Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.719Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.724Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.730Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:02.743Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:05.742Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.775Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.846Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.856Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.863Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.867Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.872Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.877Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.882Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.887Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.894Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.900Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.904Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:06.915Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:08.907Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.799Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.803Z] error: Host validation failed for: dashboard.home. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.808Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.813Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.818Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.823Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.828Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.831Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.836Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.839Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.844Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.848Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.854Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.858Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.862Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.867Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.872Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.878Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.883Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.887Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:12.900Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.661Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.745Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.748Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.751Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.755Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.761Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.764Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.776Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.780Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.784Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.787Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.790Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:14.801Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.583Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.648Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.652Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.656Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.659Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.663Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.666Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.675Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.678Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.682Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.685Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.688Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:15.702Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.282Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.347Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.351Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.357Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.363Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.369Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.375Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.386Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.390Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.393Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.398Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.402Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:16.414Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T20:26:20.583Z] error: Host validation failed for: ubuntu-server:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T22:24:01.955Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:01.970Z] error: undefined
+[2026-01-22T22:24:01.968Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:12.004Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:12.008Z] error: undefined
+[2026-01-22T22:24:12.007Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:21.766Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:21.770Z] error: undefined
+[2026-01-22T22:24:21.769Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:22.033Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:22.036Z] error: undefined
+[2026-01-22T22:24:22.035Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:27.589Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:27.593Z] error: undefined
+[2026-01-22T22:24:27.592Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:36.305Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:36.307Z] error: undefined
+[2026-01-22T22:24:36.306Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:46.216Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:46.219Z] error: undefined
+[2026-01-22T22:24:46.218Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:46.914Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:46.917Z] error: undefined
+[2026-01-22T22:24:46.916Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:52.755Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:52.759Z] error: undefined
+[2026-01-22T22:24:52.756Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:24:57.806Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:24:57.809Z] error: undefined
+[2026-01-22T22:24:57.808Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:25:04.280Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:25:04.284Z] error: undefined
+[2026-01-22T22:25:04.282Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:25:09.355Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:25:09.358Z] error: undefined
+[2026-01-22T22:25:09.357Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:25:12.842Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:25:12.845Z] error: undefined
+[2026-01-22T22:25:12.844Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:25:19.400Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:25:19.402Z] error: undefined
+[2026-01-22T22:25:19.402Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:25:33.916Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:25:33.918Z] error: undefined
+[2026-01-22T22:25:33.917Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:25:43.982Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:25:43.985Z] error: undefined
+[2026-01-22T22:25:43.984Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:25:55.769Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:25:55.771Z] error: undefined
+[2026-01-22T22:25:55.770Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:25:57.590Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:25:57.592Z] error: undefined
+[2026-01-22T22:25:57.591Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:26:07.630Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:26:07.631Z] error: undefined
+[2026-01-22T22:26:07.631Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:26:15.722Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:26:15.725Z] error: undefined
+[2026-01-22T22:26:15.724Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:26:18.559Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:26:18.561Z] error: undefined
+[2026-01-22T22:26:18.560Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:26:26.556Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:26:26.558Z] error: undefined
+[2026-01-22T22:26:26.558Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:27:34.992Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:27:34.993Z] error: undefined
+[2026-01-22T22:27:34.993Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:27:40.030Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:27:40.033Z] error: undefined
+[2026-01-22T22:27:40.032Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:28:05.600Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:28:05.603Z] error: undefined
+[2026-01-22T22:28:05.602Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:29:13.234Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:29:13.236Z] error: undefined
+[2026-01-22T22:29:13.235Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:29:23.638Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:29:23.641Z] error: undefined
+[2026-01-22T22:29:23.640Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:30:18.081Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:30:18.083Z] error: undefined
+[2026-01-22T22:30:18.082Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:30:25.910Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:30:25.912Z] error: undefined
+[2026-01-22T22:30:25.911Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:30:28.551Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:30:28.553Z] error: undefined
+[2026-01-22T22:30:28.552Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:30:36.642Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:30:36.645Z] error: undefined
+[2026-01-22T22:30:36.643Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:31:01.725Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:31:01.727Z] error: undefined
+[2026-01-22T22:31:01.726Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:31:12.564Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:31:12.567Z] error: undefined
+[2026-01-22T22:31:12.566Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:31:25.181Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:31:25.183Z] error: undefined
+[2026-01-22T22:31:25.182Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:31:30.301Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:31:30.304Z] error: undefined
+[2026-01-22T22:31:30.302Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:31:50.576Z] error: <httpProxy> Error calling http://pihole.home/api/auth...
+[2026-01-22T22:31:50.579Z] error: undefined
+[2026-01-22T22:31:50.578Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND pihole.home] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pihole.home'
+  }
+]
+[2026-01-22T22:32:55.165Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-22T22:32:55.748Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-22T22:33:02.808Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-22T22:33:15.600Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-22T22:33:55.220Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-22T22:34:01.673Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-01-22T22:34:14.429Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":6.3419342041015625e-05}
+[2026-01-22T22:34:15.095Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":7.6055526733398438e-05}
+[2026-01-22T22:34:28.910Z] error: <piholeProxyHandler> Error calling Pi-Hole API: 401. Data: {"error":{"key":"unauthorized","message":"Unauthorized","hint":null},"took":9.250640869140625e-05}
+[2026-01-22T22:44:39.506Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:44:44.615Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:44:53.481Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:44:55.549Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:45:03.561Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:45:05.435Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:45:15.460Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:45:30.485Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:46:01.623Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:46:12.565Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:46:20.565Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:51:04.565Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:51:09.581Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:51:24.763Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:51:25.573Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:51:35.652Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:51:40.801Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:51:45.823Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:51:55.674Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:52:00.945Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:52:15.692Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:52:46.001Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:53:19.862Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:53:20.703Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:53:29.931Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:53:36.069Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:53:40.590Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:53:41.538Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:54:06.548Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:56:51.724Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:56:56.578Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:57:17.904Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:57:18.976Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:57:24.027Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T22:57:44.045Z] error: <npmProxyHandler> Error 404 logging into npm {"type":"Buffer","data":[60,104,116,109,108,62,13,10,60,104,101,97,100,62,60,116,105,116,108,101,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,116,105,116,108,101,62,60,47,104,101,97,100,62,13,10,60,98,111,100,121,62,13,10,60,99,101,110,116,101,114,62,60,104,49,62,52,48,52,32,78,111,116,32,70,111,117,110,100,60,47,104,49,62,60,47,99,101,110,116,101,114,62,13,10,60,104,114,62,60,99,101,110,116,101,114,62,111,112,101,110,114,101,115,116,121,60,47,99,101,110,116,101,114,62,13,10,60,47,98,111,100,121,62,13,10,60,47,104,116,109,108,62,13,10]}
+[2026-01-22T23:26:43.171Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.054Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.057Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.068Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.117Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.125Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.128Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.132Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.144Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.149Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.152Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.167Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.170Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.173Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.236Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.239Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.242Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.245Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.247Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.251Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.361Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.364Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.367Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.372Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.469Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:44.471Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.654Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.656Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.733Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.821Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.879Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.883Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.893Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.897Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.901Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.904Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.933Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.946Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.968Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.972Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.975Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.978Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.995Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:57.998Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.009Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.090Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.094Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.105Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.108Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.111Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.114Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.145Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.148Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.183Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.187Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.220Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.224Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:26:58.278Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:27:09.934Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-22T23:27:09.939Z] error: Host validation failed for: 100.83.23.127:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-01-23T02:39:18.410Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:39:18.552Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:39:20.532Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:39:20.679Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:39:27.275Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:39:27.425Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:39:46.016Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:39:48.147Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:39:48.265Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:39:58.143Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:39:58.288Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:40:11.090Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:40:12.067Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:40:18.337Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:40:18.474Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]
+[2026-01-23T02:40:33.543Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer:9443/api/endpoints/3/docker/containers/json?all=1
+[2026-01-23T02:40:34.511Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/[object%20Object]

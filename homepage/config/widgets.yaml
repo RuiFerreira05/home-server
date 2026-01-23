@@ -1,0 +1,49 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/info-widgets/
+
+- logo:
+    icon: homepage.png
+
+- greeting:
+    text_size: x1
+    text: Hello There!
+
+- resources:
+    label: cpu
+    cpu: true
+    cputemp: true
+
+- resources:
+    label: system metrics
+    memory: true
+    disk: /
+    uptime: true
+    units: metric
+    diskUnits: bytes
+
+- resources:
+    label: network
+    network: true
+
+- search:
+    provider: google
+    showSearchSuggestions: true
+    target: _blank
+
+- datetime:
+    text_size: x1
+    format:
+      dateStyle: short
+      timeStyle: short
+      hourCycle: h23
+
+- openmeteo:
+    label: Home # optional
+    latitude: {{HOMEPAGE_VAR_OPENMETEO_LAT}}
+    longitude: {{HOMEPAGE_VAR_OPENMETEO_LON}}
+    timezone: Europe/Lisbon # optional
+    units: metric # or imperial
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+    format: # optional, Intl.NumberFormat options
+      maximumFractionDigits: 1

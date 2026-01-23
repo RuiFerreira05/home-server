@@ -1,0 +1,25 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+background:
+  image: https://raw.githubusercontent.com/orangci/walls-catppuccin-mocha/master/dark-waves.jpg
+  # blur: sm
+ 
+cardBlur: xl
+
+color: neutral
+
+layout:
+  Control Group:
+    style: row
+    columns: 2
+  Network Group:
+    style: row
+    columns: 2
+
+headerStyle: boxed

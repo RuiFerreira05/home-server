@@ -1,0 +1,79 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Control Group:
+    - Homepage Container:
+        icon: homepage.png
+        href: "http://dashboard.home"
+        description: "Dashboard Control Center"
+        server: my-docker  
+        container: homepage      
+        showStats: true          
+    
+    - Dockge:
+        icon: dockge.svg
+        href: "http://dockge.home"
+        description: "Docker Management Center"
+        server: my-docker  
+        container: dockge      
+        showStats: true   
+
+    - Portainer:
+        icon: portainer.svg
+        href: "http://portainer.home"
+        description: "Docker Management Center but with a suit"
+        server: my-docker
+        container: portainer
+        showStats: true
+        widget:
+            type: portainer
+            url: "https://portainer:9443"
+            env: 3
+            key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
+
+    - Tailscale:
+        icon: tailscale.svg
+        href: "https://login.tailscale.com/admin/machines"
+        description: "Tailwi... i mean... Tailscale"
+        widget:
+            type: tailscale
+            deviceid: {{HOMEPAGE_VAR_TAILSCALE_DEVICEID}}
+            key: {{HOMEPAGE_VAR_TAILSCALE_KEY}}
+
+
+- Network Group:
+    - Pi-hole:
+        icon: pi-hole.svg
+        href: "http://pihole.home/admin"
+        description: "The DNS sink with a hole"
+        server: my-docker
+        container: pihole
+        showStats: true
+        widget:
+            type: pihole
+            url: http://pihole
+            version: 6 # required if running v6 or higher, defaults to 5
+            key: {{HOMEPAGE_VAR_PIHOLE_KEY}} # optional, in v6 can be your password or app password
+
+    - Nginx Proxy Manager:
+        icon: nginx-proxy-manager.svg
+        href: "http://npm.home:81"
+        description: "Reverse proxy with a big name"
+        server: my-docker
+        container: nginx-proxy-manager
+        showStats: true
+        widget:
+            type: npm
+            url: http://nginx-proxy-manager:81
+            username: {{HOMEPAGE_VAR_NPM_USER}}
+            password: {{HOMEPAGE_VAR_NPM_PASSWORD}}
+    
+- Other Services:
+    - Copyparty:
+        icon: copyparty.svg
+        href: "http://copyparty.home"
+        description: "It's a party!"
+        server: my-docker
+        container: copyparty
+        showStats: true

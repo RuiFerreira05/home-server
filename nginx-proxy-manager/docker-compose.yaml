@@ -1,0 +1,39 @@
+services:
+  npm:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    ports:
+      - '80:80'   # HTTP Traffic (The Front Door)
+      - '81:81'   # Admin Dashboard for NPM
+      - '443:443' # HTTPS Traffic (Secure)
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    environment:
+      # These credentials tell NPM how to talk to the database below
+      DB_MYSQL_HOST: "db"
+      DB_MYSQL_PORT: 3306
+      DB_MYSQL_USER: ${DB_USER}
+      DB_MYSQL_PASSWORD: ${DB_PASSWORD}
+      DB_MYSQL_NAME: ${DB_NAME}
+    networks:
+      - default_network
+
+  db:
+    image: 'jc21/mariadb-aria:latest'
+    container_name: npm-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./db:/var/lib/mysql
+    networks:
+      - default_network
+
+networks:
+  default_network:
+    external: true

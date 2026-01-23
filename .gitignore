@@ -1,0 +1,5 @@
+# Ignore actual secrets
+**/.env
+
+**/*data*/
+**/*db*/
