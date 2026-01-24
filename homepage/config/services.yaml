@@ -77,3 +77,89 @@
         server: my-docker
         container: copyparty
         showStats: true
+    
+    - Jellyfin:
+        icon: jellyfin.svg
+        href: "http://jellyfin.home"
+        description: "For gelatinous media"
+        server: my-docker
+        container: jellyfin
+        showStats: true
+        widget:
+            type: jellyfin
+            url: http://jellyfin:8096
+            key: {{HOMEPAGE_VAR_JELLYFIN_KEY}}
+            enableBlocks: true # optional, defaults to false
+            enableNowPlaying: true # optional, defaults to true
+            enableUser: true # optional, defaults to false
+            enableMediaControl: true # optional, defaults to true
+            showEpisodeNumber: true # optional, defaults to false
+            expandOneStreamToTwoRows: true # optional, defaults to true
+
+- "*Arrs Group":
+    - qBittorrent:
+        icon: qbittorrent.svg
+        href: "http://qbittorrent.home"
+        description: "The ol' faithful"
+        server: my-docker
+        container: qbittorrent
+        showStats: true
+        widget:
+            type: qbittorrent
+            url: http://qbittorrent:8080
+            username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
+            password: {{HOMEPAGE_VAR_QBITTORRENT_PASSWORD}}
+            enableLeechProgress: true # optional, defaults to false
+            enableLeechSize: true # optional, defaults to false
+
+    - Radarr:
+        icon: radarr.svg
+        href: "http://radarr.home"
+        description: "ping... ping..."
+        server: my-docker
+        container: radarr
+        showStats: true
+        widget:
+            type: radarr
+            url: http://radarr:7878
+            key: {{HOMEPAGE_VAR_RADARR_KEY}}
+            enableQueue: true # optional, defaults to false
+
+    - Prowlarr:
+        icon: prowlarr.svg
+        href: "http://prowlarr.home"
+        description: "The tiger is cute tho"
+        server: my-docker
+        container: prowlarr
+        showStats: true
+        widget:
+            type: prowlarr
+            url: http://prowlarr:9696
+            key: {{HOMEPAGE_VAR_PROWLARR_KEY}}
+
+    - Sonarr:
+        icon: sonarr.svg
+        href: "http://sonarr.home"
+        description: "Like radarr but with more anime"
+        server: my-docker
+        container: sonarr
+        showStats: true
+        widget:
+            type: sonarr
+            url: http://sonarr:8989
+            key: {{HOMEPAGE_VAR_SONARR_KEY}}
+            enableQueue: true # optional, defaults to false
+
+    - Lidarr:
+        icon: lidarr.svg
+        href: "http://lidarr.home"
+        description: "Fucking music nerd... go outside"
+        server: my-docker
+        container: lidarr
+        showStats: true
+        widget:
+            type: lidarr
+            url: http://lidarr:8686
+            key: {{HOMEPAGE_VAR_LIDARR_KEY}}
+            enableQueue: true # optional, defaults to false
+            

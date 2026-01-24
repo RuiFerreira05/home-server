@@ -15,11 +15,11 @@ cardBlur: xl
 color: neutral
 
 layout:
-  Control Group:
-    style: row
-    columns: 2
-  Network Group:
-    style: row
-    columns: 2
+#   Control Group:
+#     style: row
+#     columns: 2
+#   Network Group:
+#     style: row
+#     columns: 2
 
 headerStyle: boxed

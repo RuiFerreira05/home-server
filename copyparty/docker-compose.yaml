@@ -2,12 +2,14 @@ services:
   copyparty:
     hostname: copyparty
     image: copyparty/ac:latest
+    user: "1000:1000"
     container_name: copyparty
+    restart: unless-stopped
     # ports:
       # - 3939:3939
     volumes:
       - ./cfg:/cfg
-      - ./data:/w
+      - /home/rui/data:/w
 
     environment:
       LD_PRELOAD: /usr/lib/libmimalloc-secure.so.NOPE
