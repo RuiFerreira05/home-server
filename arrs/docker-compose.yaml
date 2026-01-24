@@ -87,6 +87,22 @@ services:
     networks:
       - default_network
 
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Lisbon
+    volumes:
+      - ./bazarr/config:/config
+      - /home/rui/data:/data  # <--- Must match Radarr/Sonarr
+    # ports:
+    #   - 6767:6767 # Keep commented out for security (Access via NPM)
+    restart: unless-stopped
+    networks:
+      - default_network
+
   flaresolverr:
     image: flaresolverr/flaresolverr:latest
     container_name: flaresolverr
