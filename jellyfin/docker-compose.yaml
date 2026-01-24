@@ -1,0 +1,33 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    user: "1000:1000" # Matches your 'rui' user (critical for file permissions!)
+    restart: unless-stopped
+    
+    # HARDWARE ACCELERATION (Transcoding)
+    # This allows Jellyfin to use your Intel/AMD iGPU to transcode video
+    devices:
+      - /dev/dri:/dev/dri 
+    
+    volumes:
+      # 1. Configuration (Stored locally in the docker folder)
+      - ./config:/config
+      - ./cache:/cache
+      
+      # 2. Your Media Library (Matches your Copyparty setup)
+      # We map /home/rui/data/media on the host -> /media inside the container
+      - /home/rui/data/media:/media
+      
+    networks:
+      - default_network
+
+    # PORTS
+    # We purposefully comment these out so the outside world can't access Jellyfin directly.
+    # Access will only be possible via Nginx Proxy Manager (jellyfin.home)
+    # ports:
+    #   - "8096:8096"
+
+networks:
+  default_network:
+    external: true
