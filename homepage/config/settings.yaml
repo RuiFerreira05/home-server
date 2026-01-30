@@ -15,11 +15,14 @@ cardBlur: xl
 color: neutral
 
 layout:
-#   Control Group:
-#     style: row
-#     columns: 2
-#   Network Group:
-#     style: row
-#     columns: 2
+  Control Group:
+    style: column
+  Network Group:
+    style: column
+  Other Services:
+    style: column
+  "*Arrs Group":
+    style: row
+    columns: 4
 
 headerStyle: boxed

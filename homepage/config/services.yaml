@@ -176,7 +176,7 @@
     - Bazarr:
         icon: bazarr.svg
         href: "http://bazarr.home"
-        description: "Subtitles for your subs"
+        description: "lemme sub that title"
         server: my-docker
         container: bazarr
         showStats: true
@@ -184,4 +184,3 @@
             type: bazarr
             url: http://bazarr:6767
             key: {{HOMEPAGE_VAR_BAZARR_KEY}}
-            
