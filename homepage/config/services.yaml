@@ -136,7 +136,6 @@
             type: radarr
             url: http://radarr:7878
             key: {{HOMEPAGE_VAR_RADARR_KEY}}
-            enableQueue: true # optional, defaults to false
 
     - Prowlarr:
         icon: prowlarr.svg
@@ -161,7 +160,6 @@
             type: sonarr
             url: http://sonarr:8989
             key: {{HOMEPAGE_VAR_SONARR_KEY}}
-            enableQueue: true # optional, defaults to false
 
     - Lidarr:
         icon: lidarr.svg
@@ -174,5 +172,16 @@
             type: lidarr
             url: http://lidarr:8686
             key: {{HOMEPAGE_VAR_LIDARR_KEY}}
-            enableQueue: true # optional, defaults to false
+
+    - Bazarr:
+        icon: bazarr.svg
+        href: "http://bazarr.home"
+        description: "Subtitles for your subs"
+        server: my-docker
+        container: bazarr
+        showStats: true
+        widget:
+            type: bazarr
+            url: http://bazarr:6767
+            key: {{HOMEPAGE_VAR_BAZARR_KEY}}
             
