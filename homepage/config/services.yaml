@@ -109,6 +109,41 @@
             key: {{HOMEPAGE_VAR_IMMICH_KEY}}
             version: 2
 
+- Amaral stuff:
+
+    - Calibre-Web:
+        icon: calibre-web.svg
+        href: "http://calibre.home"
+        description: ".50 calibre books"
+        server: my-docker
+        container: calibre-web
+        showStats: true
+        widget:
+            type: calibreweb
+            url: http://calibre-web:8083
+            username: {{HOMEPAGE_VAR_CALIBREWEB_USER}}
+            password: {{HOMEPAGE_VAR_CALIBREWEB_PASSWORD}}
+
+    - Shelfmark:
+        icon: https://pb.dashboardicons.com/api/files/community_gallery/x37y8dqzpfbnx47/shelfmark_hm0p7f7i8e.png
+        href: "http://shelfmark.home"
+        description: "search for smut"
+        server: my-docker
+        container: shelfmark
+        showStats: true
+
+    - AudioBookShelf:
+        icon: audiobookshelf.svg
+        href: "http://audiobookshelf.home"
+        description: "listen to smut"
+        server: my-docker
+        container: audiobookshelf
+        showStats: true
+        widget:
+            type: audiobookshelf
+            url: http://audiobookshelf:80
+            key: {{HOMEPAGE_VAR_AUDIOBOOKSHELF_KEY}}
+
 - "*Arrs Group":
     - qBittorrent:
         icon: qbittorrent.svg

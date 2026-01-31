@@ -21,8 +21,10 @@ layout:
     style: column
   Other Services:
     style: column
+  Amaral stuff:
+    style: column
   "*Arrs Group":
     style: row
-    columns: 4
+    columns: 6
 
 headerStyle: boxed

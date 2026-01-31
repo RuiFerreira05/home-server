@@ -103,6 +103,60 @@ services:
     networks:
       - default_network
 
+  calibre-web:
+    image: crocodilestick/calibre-web-automated:dev
+    container_name: calibre-web
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Lisbon
+      - DOCKER_MODS=linuxserver/mods:universal-calibre
+    volumes:
+      - ./calibre-web/config:/config
+      - /home/rui/data/media/books:/calibre-library  # <--- Where your library lives
+      - /home/rui/data/media/books/ingest:/cwa-book-ingest # <--- Where it dumps new downloads
+    ports:
+      - 8083:8083
+    restart: unless-stopped
+    networks:
+      - default_network
+
+  shelfmark:
+    image: ghcr.io/calibrain/shelfmark:latest
+    container_name: shelfmark
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Lisbon
+    # ports:
+    #   - 8084:8084
+    restart: unless-stopped
+    volumes:
+      - ./shelfmark/config:/config # App configuration
+      - /home/rui/data/media/books/ingest:/books # Default destination for book downloads
+      - /home/rui/data/media/audiobooks:/audiobooks
+      - /home/rui/data:/data
+    networks:
+      - default_network
+
+  audiobookshelf:
+    image: ghcr.io/advplyr/audiobookshelf:latest
+    container_name: audiobookshelf
+    environment:
+      - AUDIOBOOKSHELF_UID=1000
+      - AUDIOBOOKSHELF_GID=1000
+      - TZ=Europe/Lisbon
+    volumes:
+      - ./audiobookshelf/config:/config
+      - ./audiobookshelf/metadata:/metadata
+      - /home/rui/data/media/books:/audiobooks
+      - /home/rui/data/media/podcasts:/podcasts
+    # ports:
+    #   - 13378:80
+    restart: unless-stopped
+    networks:
+      - default_network
+
   flaresolverr:
     image: flaresolverr/flaresolverr:latest
     container_name: flaresolverr
