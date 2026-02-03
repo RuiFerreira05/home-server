@@ -1,0 +1,22 @@
+services:
+  duckdns:
+    image: lscr.io/linuxserver/duckdns:latest
+    container_name: duckdns
+    # network_mode: host #optional
+    environment:
+      PUID: 1000 #optional
+      PGID: 1000 #optional
+      TZ: Europe/Lisbon #optional
+      SUBDOMAINS: ${SUBDOMAINS}
+      TOKEN: ${TOKEN}
+      UPDATE_IP: ipv4 #optional
+      LOG_FILE: false #optional
+    volumes:
+      - ./config:/config #optional
+    restart: unless-stopped
+    networks:
+      - default_network
+
+networks:
+  default_network:
+    external: true
