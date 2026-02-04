@@ -112,7 +112,7 @@
     - JDownloader 2:
         icon: jdownloader2.png
         href: "http://jdownloader.home"
-        description: "Download manager extraordinaire"
+        description: "Johnloader"
         server: my-docker
         container: jdownloader
         showStats: true
