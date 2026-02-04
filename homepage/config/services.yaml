@@ -32,15 +32,6 @@
             env: 3
             key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
 
-    - Tailscale:
-        icon: tailscale.svg
-        href: "https://login.tailscale.com/admin/machines"
-        description: "Tailwi... i mean... Tailscale"
-        widget:
-            type: tailscale
-            deviceid: {{HOMEPAGE_VAR_TAILSCALE_DEVICEID}}
-            key: {{HOMEPAGE_VAR_TAILSCALE_KEY}}
-
 
 - Network Group:
     - Pi-hole:
@@ -68,6 +59,15 @@
             url: http://nginx-proxy-manager:81
             username: {{HOMEPAGE_VAR_NPM_USER}}
             password: {{HOMEPAGE_VAR_NPM_PASSWORD}}
+
+    - Tailscale:
+        icon: tailscale.svg
+        href: "https://login.tailscale.com/admin/machines"
+        description: "Tailwi... i mean... Tailscale"
+        widget:
+            type: tailscale
+            deviceid: {{HOMEPAGE_VAR_TAILSCALE_DEVICEID}}
+            key: {{HOMEPAGE_VAR_TAILSCALE_KEY}}
     
 - Other Services:
     - Copyparty:
