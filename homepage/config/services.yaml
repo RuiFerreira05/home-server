@@ -109,6 +109,19 @@
             key: {{HOMEPAGE_VAR_IMMICH_KEY}}
             version: 2
 
+    - JDownloader 2:
+        icon: jdownloader2.png
+        href: "http://jdownloader.home"
+        description: "Download manager extraordinaire"
+        server: my-docker
+        container: jdownloader
+        showStats: true
+        widget:
+            type: jdownloader
+            username: {{HOMEPAGE_VAR_JDOWNLOADER_USER}}
+            password: {{HOMEPAGE_VAR_JDOWNLOADER_PASSWORD}}
+            client: "JDownloader@Docker"
+
 - Amaral stuff:
 
     - Calibre-Web:
