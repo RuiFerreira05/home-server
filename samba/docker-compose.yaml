@@ -1,0 +1,16 @@
+services:
+  samba:
+    image: dockurr/samba
+    container_name: samba
+    network_mode: host
+    environment:
+      UID: "1000"
+      GID: "1000"
+      NAME: "data"
+      USER: ${USER}
+      PASS: ${PASS}
+    # ports:
+    #   - 445:445
+    volumes:
+      - /home/rui/data:/storage
+    restart: unless-stopped
