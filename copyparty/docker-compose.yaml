@@ -26,6 +26,8 @@ services:
       timeout: 2s
       retries: 5
       start_period: 15s
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
 networks:
   default:

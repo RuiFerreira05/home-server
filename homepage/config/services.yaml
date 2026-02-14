@@ -32,6 +32,17 @@
             env: 3
             key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
 
+    - Watchtower:
+        icon: watchtower.svg
+        href: "http://watchtower.home"
+        description: "that's a big tower of watches"
+        server: my-docker
+        container: watchtower
+        showStats: true
+        widget:
+            type: watchtower
+            url: "http://watchtower:8080"
+            key: {{HOMEPAGE_VAR_WATCHTOWER_KEY}}
 
 - Network Group:
     - Pi-hole:

@@ -16,6 +16,8 @@ services:
     environment:
       # Tell Dockge where to find the stacks
       - DOCKGE_STACKS_DIR=/home/rui/docker
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
 networks:
   default:

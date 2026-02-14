@@ -13,6 +13,8 @@ services:
       PGID: 988
       HOMEPAGE_ALLOWED_HOSTS: ubuntu-server:3000,dashboard.home # required, may need port. See gethomepage.dev/installation/#homepage_allowed_hosts
     restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
 networks:
   default:

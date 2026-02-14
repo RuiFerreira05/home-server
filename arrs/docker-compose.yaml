@@ -20,6 +20,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   # 2. THE MANAGER (Movies)
   radarr:
@@ -38,6 +40,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   # 3. THE SCOUT (Indexers)
   prowlarr:
@@ -55,6 +59,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   sonarr:
     image: lscr.io/linuxserver/sonarr:latest
@@ -71,6 +77,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   lidarr:
     image: lscr.io/linuxserver/lidarr:latest
@@ -87,6 +95,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   bazarr:
     image: lscr.io/linuxserver/bazarr:latest
@@ -103,6 +113,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   calibre-web:
     image: crocodilestick/calibre-web-automated:dev
@@ -139,6 +151,8 @@ services:
       - /home/rui/data:/data
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   audiobookshelf:
     image: ghcr.io/advplyr/audiobookshelf:latest
@@ -157,6 +171,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   flaresolverr:
     image: flaresolverr/flaresolverr:latest
@@ -169,6 +185,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
 networks:
   default_network:

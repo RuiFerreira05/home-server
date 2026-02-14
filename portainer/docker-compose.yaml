@@ -8,7 +8,9 @@ services:
       - ./portainer_data:/data
     # ports:
     #   - 9443:9443
-
+    #   - 9000:9000
+    labels:
+      - com.centurylinklabs.watchtower.enable=true # Only update this container if the label is set
 networks:
   default:
     name: default_network

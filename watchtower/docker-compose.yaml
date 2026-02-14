@@ -1,0 +1,23 @@
+services:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - TZ=Europe/Lisbon
+      - WATCHTOWER_CLEANUP=true       # Removes old images after updating to save space
+      - WATCHTOWER_LABEL_ENABLE=true  # <--- CRITICAL: Only update containers with the label
+      - WATCHTOWER_SCHEDULE=0 0 6 * * * # Checks every day at 6:00 AM
+      - DOCKER_API_VERSION=1.53
+      - WATCHTOWER_HTTP_API_METRICS=true # Enable the HTTP API for metrics
+      - WATCHTOWER_HTTP_API_TOKEN=${WATCHTOWER_HTTP_API_TOKEN} # Set the token for HTTP API authentication
+    networks:
+      - default_network
+
+# "com.centurylinklabs.watchtower.enable=true"
+
+networks:
+  default_network:
+    external: true

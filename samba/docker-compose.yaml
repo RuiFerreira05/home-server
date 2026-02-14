@@ -14,3 +14,5 @@ services:
     volumes:
       - /home/rui/data:/storage
     restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
