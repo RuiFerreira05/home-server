@@ -34,7 +34,6 @@
 
     - Watchtower:
         icon: watchtower.svg
-        href: "http://watchtower.home"
         description: "that's a big tower of watches"
         server: my-docker
         container: watchtower
