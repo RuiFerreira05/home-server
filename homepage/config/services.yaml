@@ -134,19 +134,6 @@
 
 - Amaral stuff:
 
-    - Calibre-Web:
-        icon: calibre-web.svg
-        href: "http://calibre.home"
-        description: ".50 calibre books"
-        server: my-docker
-        container: calibre-web
-        showStats: true
-        widget:
-            type: calibreweb
-            url: http://calibre-web:8083
-            username: {{HOMEPAGE_VAR_CALIBREWEB_USER}}
-            password: {{HOMEPAGE_VAR_CALIBREWEB_PASSWORD}}
-
     - Shelfmark:
         icon: https://pb.dashboardicons.com/api/files/community_gallery/x37y8dqzpfbnx47/shelfmark_hm0p7f7i8e.png
         href: "http://shelfmark.home"

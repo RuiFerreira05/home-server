@@ -116,24 +116,6 @@ services:
     labels:
       - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  calibre-web:
-    image: crocodilestick/calibre-web-automated:dev
-    container_name: calibre-web
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Lisbon
-      - DOCKER_MODS=linuxserver/mods:universal-calibre
-    volumes:
-      - ./calibre-web/config:/config
-      - /home/rui/data/media/books:/calibre-library  # <--- Where your library lives
-      - /home/rui/data/media/books/ingest:/cwa-book-ingest # <--- Where it dumps new downloads
-    ports:
-      - 8083:8083
-    restart: unless-stopped
-    networks:
-      - default_network
-
   shelfmark:
     image: ghcr.io/calibrain/shelfmark:latest
     container_name: shelfmark
@@ -146,8 +128,6 @@ services:
     restart: unless-stopped
     volumes:
       - ./shelfmark/config:/config # App configuration
-      - /home/rui/data/media/books/ingest:/books # Default destination for book downloads
-      - /home/rui/data/media/audiobooks:/audiobooks
       - /home/rui/data:/data
     networks:
       - default_network
