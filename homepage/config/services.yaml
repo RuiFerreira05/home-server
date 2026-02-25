@@ -154,6 +154,19 @@
             url: http://audiobookshelf:80
             key: {{HOMEPAGE_VAR_AUDIOBOOKSHELF_KEY}}
 
+    - Booklore:
+        icon: booklore.svg
+        href: "http://booklore.home"
+        description: "read smut"
+        server: my-docker
+        container: booklore
+        showStats: true
+        # widget:
+        #     type: booklore
+        #     url: http://booklore
+        #     username: {{HOMEPAGE_VAR_BOOKLORE_USER}}
+        #     password: {{HOMEPAGE_VAR_BOOKLORE_PASSWORD}}      For some reason the booklore widget does not work              
+
 - "*Arrs Group":
     - qBittorrent:
         icon: qbittorrent.svg
