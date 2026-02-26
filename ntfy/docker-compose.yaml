@@ -1,0 +1,21 @@
+services:
+  ntfy:
+    image: binwiederhier/ntfy:latest
+    container_name: ntfy
+    command: serve
+    environment:
+      - TZ=Europe/Lisbon
+    volumes:
+      - ./data:/var/cache/ntfy
+      - ./config:/etc/ntfy
+    # ports:
+    #   - "2586:80"
+    restart: unless-stopped
+    networks:
+      - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+
+networks:
+  default_network:
+    external: true

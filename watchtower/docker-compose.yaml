@@ -2,6 +2,7 @@ services:
   watchtower:
     image: containrrr/watchtower
     container_name: watchtower
+    hostname: watchtower
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -14,14 +15,19 @@ services:
       - WATCHTOWER_HTTP_API_METRICS=true # Enable the HTTP API for metrics
       - WATCHTOWER_HTTP_API_TOKEN=${WATCHTOWER_HTTP_API_TOKEN} # Set the token for HTTP API authentication
 
-      - WATCHTOWER_NOTIFICATIONS=email
-      - WATCHTOWER_NOTIFICATION_EMAIL_FROM=11556654433221m@gmail.com # The email address sending the alert (e.g., your Gmail)
-      - WATCHTOWER_NOTIFICATION_EMAIL_TO=11556654433221m@gmail.com # Where you want to receive the alert
-      - WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.gmail.com # E.g., smtp.gmail.com or smtp.mailgun.org
-      - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PORT=587 # 587 is standard for TLS
-      - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_USER=${SMTP_USERNAME} # Pulls from your .env file
-      - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PASSWORD=${SMTP_PASSWORD} # Pulls from your .env file
-      - WATCHTOWER_NOTIFICATION_EMAIL_DELAY=2 # Gives the email a 2-second delay to ensure logs are captured
+      # - WATCHTOWER_NOTIFICATIONS=email
+      # - WATCHTOWER_NOTIFICATION_EMAIL_FROM=11556654433221m@gmail.com # The email address sending the alert (e.g., your Gmail)
+      # - WATCHTOWER_NOTIFICATION_EMAIL_TO=11556654433221m@gmail.com # Where you want to receive the alert
+      # - WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.gmail.com # E.g., smtp.gmail.com or smtp.mailgun.org
+      # - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PORT=587 # 587 is standard for TLS
+      # - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_USER=${SMTP_USERNAME} # Pulls from your .env file
+      # - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PASSWORD=${SMTP_PASSWORD} # Pulls from your .env file
+      # - WATCHTOWER_NOTIFICATION_EMAIL_DELAY=2 # Gives the email a 2-second delay to ensure logs are captured
+
+      - WATCHTOWER_NOTIFICATIONS=shoutrrr
+      - WATCHTOWER_NOTIFICATION_URL=ntfy://ntfy.server-of-glass-ts.duckdns.org/jvCi8Kr48Hvx5DKW_my_alerts
+      - WATCHTOWER_NOTIFICATION_URL=${NTFY_URL}
+      - WATCHTOWER_NOTIFICATIONS_HOSTNAME=ubuntu-server-watchtower
     networks:
       - default_network
 
