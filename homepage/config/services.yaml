@@ -43,6 +43,17 @@
             url: "http://watchtower:8080"
             key: {{HOMEPAGE_VAR_WATCHTOWER_KEY}}
 
+    - Scrutiny:
+        icon: scrutiny.svg
+        href: "http://scrutiny.home"
+        description: "This drive is not very SMART"
+        server: my-docker
+        container: scrutiny
+        showStats: true
+        widget:
+            type: scrutiny
+            url: "http://scrutiny:8080"
+
 - Network Group:
     - Pi-hole:
         icon: pi-hole.svg
