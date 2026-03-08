@@ -19,6 +19,8 @@ services:
       - TZ=Europe/Lisbon
       # --- NTFY SETTINGS ---
       - SCRUTINY_NOTIFY_URLS=ntfy://ntfy/jvCi8Kr48Hvx5DKW_my_alerts
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
     networks:
       - default_network
 
