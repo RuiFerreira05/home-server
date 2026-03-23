@@ -177,8 +177,6 @@ services:
     restart: unless-stopped
     networks:
       - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   mariadb:
     image: lscr.io/linuxserver/mariadb:11.4.5
