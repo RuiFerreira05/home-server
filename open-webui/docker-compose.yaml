@@ -1,0 +1,20 @@
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    environment:
+      - OLLAMA_BASE_URL=http://WINDOWS-RUI:11434
+      - HF_TOKEN=${HF_TOKEN}
+    volumes:
+      - ./data:/app/backend/data
+    # ports:
+    #   - "8080:8080"
+    restart: unless-stopped
+    networks:
+      - default_network
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+
+networks:
+  default_network:
+    external: true
