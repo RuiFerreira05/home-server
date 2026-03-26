@@ -143,6 +143,14 @@
             password: {{HOMEPAGE_VAR_JDOWNLOADER_PASSWORD}}
             client: "JDownloader@Docker"
 
+    - Open-webUI:
+        icon: open-webui
+        href: "https://open-webui.home.lan"
+        description: "Exclusively for AI Slop"
+        server: my-docker
+        container: open-webui
+        showStats: true
+
 - Amaral stuff:
 
     - Shelfmark:
