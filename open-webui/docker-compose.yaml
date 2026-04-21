@@ -3,8 +3,10 @@ services:
     image: ghcr.io/open-webui/open-webui:main
     container_name: open-webui
     environment:
-      - OLLAMA_BASE_URL=http://WINDOWS-RUI:11434
+      - OLLAMA_BASE_URL=http://100.92.167.121:11434
       - HF_TOKEN=${HF_TOKEN}
+      - OPENAI_API_BASE_URL=http://100.83.23.127:8642/v1
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
     volumes:
       - ./data:/app/backend/data
     # ports:
