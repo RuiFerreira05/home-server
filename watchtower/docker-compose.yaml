@@ -7,27 +7,53 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      - TZ=Europe/Lisbon
-      - WATCHTOWER_CLEANUP=true       # Removes old images after updating to save space
-      - WATCHTOWER_LABEL_ENABLE=true  # <--- CRITICAL: Only update containers with the label
-      - WATCHTOWER_SCHEDULE=0 0 6 * * * # Checks every day at 6:00 AM
-      - DOCKER_API_VERSION=1.53
-      - WATCHTOWER_HTTP_API_METRICS=true # Enable the HTTP API for metrics
-      - WATCHTOWER_HTTP_API_TOKEN=${WATCHTOWER_HTTP_API_TOKEN} # Set the token for HTTP API authentication
+      TZ: Europe/Lisbon
+      WATCHTOWER_CLEANUP: true       # Removes old images after updating to save space
+      WATCHTOWER_LABEL_ENABLE: true  # <--CRITICAL: Only update containers with the label
+      WATCHTOWER_SCHEDULE: 0 0 6 * * * # Checks every day at 6:00 AM
+      DOCKER_API_VERSION: 1.53
+      WATCHTOWER_HTTP_API_METRICS: true # Enable the HTTP API for metrics
+      WATCHTOWER_HTTP_API_TOKEN: ${WATCHTOWER_HTTP_API_TOKEN} # Set the token for HTTP API authentication
 
-      # - WATCHTOWER_NOTIFICATIONS=email
-      # - WATCHTOWER_NOTIFICATION_EMAIL_FROM=11556654433221m@gmail.com # The email address sending the alert (e.g., your Gmail)
-      # - WATCHTOWER_NOTIFICATION_EMAIL_TO=11556654433221m@gmail.com # Where you want to receive the alert
-      # - WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.gmail.com # E.g., smtp.gmail.com or smtp.mailgun.org
-      # - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PORT=587 # 587 is standard for TLS
-      # - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_USER=${SMTP_USERNAME} # Pulls from your .env file
-      # - WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PASSWORD=${SMTP_PASSWORD} # Pulls from your .env file
-      # - WATCHTOWER_NOTIFICATION_EMAIL_DELAY=2 # Gives the email a 2-second delay to ensure logs are captured
+      # WATCHTOWER_NOTIFICATIONS: email
+      # WATCHTOWER_NOTIFICATION_EMAIL_FROM: 11556654433221m@gmail.com # The email address sending the alert (e.g., your Gmail)
+      # WATCHTOWER_NOTIFICATION_EMAIL_TO: 11556654433221m@gmail.com # Where you want to receive the alert
+      # WATCHTOWER_NOTIFICATION_EMAIL_SERVER: smtp.gmail.com # E.g., smtp.gmail.com or smtp.mailgun.org
+      # WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PORT: 587 # 587 is standard for TLS
+      # WATCHTOWER_NOTIFICATION_EMAIL_SERVER_USER: ${SMTP_USERNAME} # Pulls from your .env file
+      # WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PASSWORD: ${SMTP_PASSWORD} # Pulls from your .env file
+      # WATCHTOWER_NOTIFICATION_EMAIL_DELAY: 2 # Gives the email a 2-second delay to ensure logs are captured
 
-      - WATCHTOWER_NOTIFICATIONS=shoutrrr
-      - WATCHTOWER_NOTIFICATION_URL=ntfy://ntfy.server-of-glass-ts.duckdns.org/jvCi8Kr48Hvx5DKW_my_alerts
-      - WATCHTOWER_NOTIFICATION_URL=${NTFY_URL}
-      - WATCHTOWER_NOTIFICATIONS_HOSTNAME=ubuntu-server-watchtower
+      WATCHTOWER_NOTIFICATIONS: shoutrrr
+      WATCHTOWER_NOTIFICATION_URL: >
+        ${NTFY_URL}
+        ${DISCORD_WEBHOOK_URL}
+      WATCHTOWER_NOTIFICATIONS_HOSTNAME: ubuntu-server-watchtower
+
+      WATCHTOWER_NOTIFICATION_REPORT: "true"
+      WATCHTOWER_NOTIFICATION_TEMPLATE: |
+        {{- if .Report -}}
+          {{- with .Report -}}
+            🤖 **Watchtower Report** 📦 {{len .Scanned}} Scanned | ✨ {{len .Updated}} Updated | ❌ {{len .Failed}} Failed
+            {{- if .Updated}}
+            
+            ✅ **Updates:**{{range .Updated}}
+            - `{{.Name}}`: `{{.CurrentImageID.ShortID}}` ➡️ `{{.LatestImageID.ShortID}}`{{end}}
+            {{- end -}}
+            {{- if .Failed}}
+            
+            🚨 **Failures:**{{range .Failed}}
+            - `{{.Name}}`: {{.Error}}{{end}}
+            {{- end -}}
+            {{- if .Skipped}}
+            
+            ⏭️ **Skipped:**{{range .Skipped}}
+            - `{{.Name}}`: {{.Error}}{{end}}
+            {{- end -}}
+          {{- end -}}
+        {{- else -}}
+          {{range .Entries -}}ℹ️ {{.Message}}{{"\n"}}{{- end -}}
+        {{- end -}}
     networks:
       - default_network
 
