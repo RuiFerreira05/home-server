@@ -16,6 +16,21 @@ services:
       - default_network
     labels:
       - com.centurylinklabs.watchtower.enable=true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - uv-translation-layer
+    
+  uv-translation-layer:
+    build: ./IAedu_FCT_translation_layer
+    container_name: uv-translation-layer
+    restart: unless-stopped
+    networks:
+      - default_network
+    environment:
+      - TARGET_ENDPOINT=${TARGET_ENDPOINT}
+      - API_KEY=${API_KEY}
+      - CHANNEL_ID=${CHANNEL_ID}
 
 networks:
   default_network:

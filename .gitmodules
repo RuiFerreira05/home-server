@@ -1,0 +1,3 @@
+[submodule "open-webui/IAedu_FCT_translation_layer"]
+	path = open-webui/IAedu_FCT_translation_layer
+	url = git@github.com:RuiFerreira05/IAedu_FCT_translation_layer.git
