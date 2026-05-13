@@ -1,37 +1,41 @@
 services:
-  open-webui:
-    image: ghcr.io/open-webui/open-webui:main
-    container_name: open-webui
-    environment:
-      - OLLAMA_BASE_URL=http://100.92.167.121:11434
-      - HF_TOKEN=${HF_TOKEN}
-      - OPENAI_API_BASE_URL=http://100.83.23.127:8642/v1
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-    volumes:
-      - ./data:/app/backend/data
-    # ports:
-    #   - "8080:8080"
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - com.centurylinklabs.watchtower.enable=true
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    depends_on:
-      - uv-translation-layer
-    
-  uv-translation-layer:
-    build: ./IAedu_FCT_translation_layer
-    container_name: uv-translation-layer
-    restart: unless-stopped
-    networks:
-      - default_network
-    environment:
-      - TARGET_ENDPOINT=${TARGET_ENDPOINT}
-      - API_KEY=${API_KEY}
-      - CHANNEL_ID=${CHANNEL_ID}
+    open-webui:
+        image: ghcr.io/open-webui/open-webui:main
+        container_name: open-webui
+        environment:
+            - OLLAMA_BASE_URL=http://100.92.167.121:11434
+            - HF_TOKEN=${HF_TOKEN}
+            - OPENAI_API_BASE_URL=http://100.83.23.127:8642/v1
+            - OPENAI_API_KEY=${OPENAI_API_KEY}
+        volumes:
+            - ./data:/app/backend/data
+        # ports:
+        #   - "8080:8080"
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - com.centurylinklabs.watchtower.enable=true
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        depends_on:
+            - uv-translation-layer
+
+    uv-translation-layer:
+        build: ./IAedu_FCT_translation_layer
+        container_name: uv-translation-layer
+        restart: unless-stopped
+        networks:
+            - default_network
+        environment:
+            - CLAUDE_ENDPOINT=${CLAUDE_ENDPOINT}
+            - CLAUDE_API_KEY=${CLAUDE_API_KEY}
+            - CLAUDE_CHANNEL_ID=${CLAUDE_CHANNEL_ID}
+            - GPT_ENDPOINT=${GPT_ENDPOINT}
+            - GPT_API_KEY=${GPT_API_KEY}
+            - GPT_CHANNEL_ID=${GPT_CHANNEL_ID}
+            - PORT=${TL_PORT}
 
 networks:
-  default_network:
-    external: true
+    default_network:
+        external: true
