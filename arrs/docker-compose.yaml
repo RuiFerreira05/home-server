@@ -1,219 +1,221 @@
 services:
-  # 1. THE WORKER
-  qbittorrent:
-    image: lscr.io/linuxserver/qbittorrent:latest
-    container_name: qbittorrent
-    environment:
-      - PUID=1000   # Your 'rui' user
-      - PGID=1000
-      - TZ=Europe/Lisbon
-      - WEBUI_PORT=8080
-      - DOCKER_MODS=ghcr.io/vuetorrent/vuetorrent-lsio-mod:latest
-    volumes:
-      - ./qbittorrent/config:/config
-      # MAP THE FULL DATA FOLDER (Matches Copyparty)
-      - /home/rui/data:/data
-    ports:
-      # - 8080:8080   # Web UI
-      - 6881:6881   # Torrent traffic (TCP)
-      - 6881:6881/udp # Torrent traffic (UDP)
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    # 1. THE WORKER
+    qbittorrent:
+        image: lscr.io/linuxserver/qbittorrent:latest
+        container_name: qbittorrent
+        environment:
+            - PUID=1000 # Your 'rui' user
+            - PGID=1000
+            - TZ=Europe/Lisbon
+            - WEBUI_PORT=8080
+            - DOCKER_MODS=ghcr.io/vuetorrent/vuetorrent-lsio-mod:latest
+        volumes:
+            - ./qbittorrent/config:/config
+            # MAP THE FULL DATA FOLDER (Matches Copyparty)
+            - /home/rui/data:/data
+        ports:
+            # - 8080:8080   # Web UI
+            - 6881:6881 # Torrent traffic (TCP)
+            - 6881:6881/udp # Torrent traffic (UDP)
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  # 2. THE MANAGER (Movies)
-  radarr:
-    image: lscr.io/linuxserver/radarr:latest
-    container_name: radarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Lisbon
-    volumes:
-      - ./radarr/config:/config
-      # MUST BE IDENTICAL to qBittorrent
-      - /home/rui/data:/data
-    # ports:
-    #   - 7878:7878
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    # 2. THE MANAGER (Movies)
+    radarr:
+        image: lscr.io/linuxserver/radarr:latest
+        container_name: radarr
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Europe/Lisbon
+        volumes:
+            - ./radarr/config:/config
+            # MUST BE IDENTICAL to qBittorrent
+            - /home/rui/data:/data
+        # ports:
+        #   - 7878:7878
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  # 3. THE SCOUT (Indexers)
-  prowlarr:
-    image: lscr.io/linuxserver/prowlarr:latest
-    container_name: prowlarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Lisbon
-    volumes:
-      - ./prowlarr/config:/config
-      # Prowlarr doesn't need access to media files, just config
-    # ports:
-    #   - 9696:9696
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    # 3. THE SCOUT (Indexers)
+    prowlarr:
+        image: lscr.io/linuxserver/prowlarr:latest
+        container_name: prowlarr
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Europe/Lisbon
+        volumes:
+            - ./prowlarr/config:/config
+            # Prowlarr doesn't need access to media files, just config
+        # ports:
+        #   - 9696:9696
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  sonarr:
-    image: lscr.io/linuxserver/sonarr:latest
-    container_name: sonarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Lisbon
-    volumes:
-      - ./sonarr/config:/config
-      - /home/rui/data:/data
-    # ports:
-    #   - 8989:8989
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    sonarr:
+        image: lscr.io/linuxserver/sonarr:latest
+        container_name: sonarr
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Europe/Lisbon
+        volumes:
+            - ./sonarr/config:/config
+            - /home/rui/data:/data
+        # ports:
+        #   - 8989:8989
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  lidarr:
-    image: lscr.io/linuxserver/lidarr:latest
-    container_name: lidarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Lisbon
-    volumes:
-      - ./lidarr/config:/config
-      - /home/rui/data:/data
-    # ports:
-    #   - 8686:8686
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    lidarr:
+        image: lscr.io/linuxserver/lidarr:latest
+        container_name: lidarr
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Europe/Lisbon
+        volumes:
+            - ./lidarr/config:/config
+            - /home/rui/data:/data
+        # ports:
+        #   - 8686:8686
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  bazarr:
-    image: lscr.io/linuxserver/bazarr:latest
-    container_name: bazarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Lisbon
-    volumes:
-      - ./bazarr/config:/config
-      - /home/rui/data:/data  # <--- Must match Radarr/Sonarr
-    # ports:
-    #   - 6767:6767 # Keep commented out for security (Access via NPM)
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    bazarr:
+        image: lscr.io/linuxserver/bazarr:latest
+        container_name: bazarr
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Europe/Lisbon
+        volumes:
+            - ./bazarr/config:/config
+            - /home/rui/data:/data # <--- Must match Radarr/Sonarr
+        # ports:
+        #   - 6767:6767 # Keep commented out for security (Access via NPM)
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  shelfmark:
-    image: ghcr.io/calibrain/shelfmark:latest
-    container_name: shelfmark
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Lisbon
-    # ports:
-    #   - 8084:8084
-    restart: unless-stopped
-    volumes:
-      - ./shelfmark/config:/config # App configuration
-      - /home/rui/data:/data
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    shelfmark:
+        image: ghcr.io/calibrain/shelfmark:latest
+        container_name: shelfmark
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Europe/Lisbon
+        # ports:
+        #   - 8084:8084
+        restart: unless-stopped
+        volumes:
+            - ./shelfmark/config:/config # App configuration
+            - /home/rui/data:/data
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  audiobookshelf:
-    image: ghcr.io/advplyr/audiobookshelf:latest
-    container_name: audiobookshelf
-    environment:
-      - AUDIOBOOKSHELF_UID=1000
-      - AUDIOBOOKSHELF_GID=1000
-      - TZ=Europe/Lisbon
-    volumes:
-      - ./audiobookshelf/config:/config
-      - ./audiobookshelf/metadata:/metadata
-      - /home/rui/data/media/books:/audiobooks
-      - /home/rui/data/media/podcasts:/podcasts
-    # ports:
-    #   - 13378:80
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    audiobookshelf:
+        image: ghcr.io/advplyr/audiobookshelf:latest
+        container_name: audiobookshelf
+        environment:
+            - AUDIOBOOKSHELF_UID=1000
+            - AUDIOBOOKSHELF_GID=1000
+            - TZ=Europe/Lisbon
+        volumes:
+            - ./audiobookshelf/config:/config
+            - ./audiobookshelf/metadata:/metadata
+            - /home/rui/data/media/books:/audiobooks
+            - /home/rui/data/media/podcasts:/podcasts
+        # ports:
+        #   - 13378:80
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  booklore:
-    image: grimmory/grimmory:latest
-    container_name: booklore
-    environment:
-      - USER_ID=${APP_USER_ID}
-      - GROUP_ID=${APP_GROUP_ID}
-      - TZ=${TZ}
-      - DATABASE_URL=${DATABASE_URL}
-      - DATABASE_USERNAME=${DB_USER}
-      - DATABASE_PASSWORD=${DB_PASSWORD}
-      - BOOKLORE_PORT=${BOOKLORE_PORT}
-    depends_on:
-      mariadb:
-        condition: service_healthy
-    ports:
-      - "${BOOKLORE_PORT}:${BOOKLORE_PORT}"
-    volumes:
-      - ./booklore/data:/app/data
-      - /home/rui/data/media/books:/books
-      - /home/rui/data/media/bookdrop:/bookdrop
-    restart: unless-stopped
-    networks:
-      - default_network
+    booklore:
+        image: grimmory/grimmory:latest
+        container_name: booklore
+        environment:
+            - USER_ID=${APP_USER_ID}
+            - GROUP_ID=${APP_GROUP_ID}
+            - TZ=${TZ}
+            - DATABASE_URL=${DATABASE_URL}
+            - DATABASE_USERNAME=${DB_USER}
+            - DATABASE_PASSWORD=${DB_PASSWORD}
+            - BOOKLORE_PORT=${BOOKLORE_PORT}
+        depends_on:
+            mariadb:
+                condition: service_healthy
+        ports:
+            - "${BOOKLORE_PORT}:${BOOKLORE_PORT}"
+        volumes:
+            - ./booklore/data:/app/data
+            - /home/rui/data/media/books:/books
+            - /home/rui/data/media/bookdrop:/bookdrop
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-  mariadb:
-    image: lscr.io/linuxserver/mariadb:11.4.5
-    container_name: mariadb
-    environment:
-      - PUID=${DB_USER_ID}
-      - PGID=${DB_GROUP_ID}
-      - TZ=${TZ}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_USER=${DB_USER}
-      - MYSQL_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - ./booklore/mariadb/config:/config
-    restart: unless-stopped
-    healthcheck:
-      test: [ "CMD", "mariadb-admin", "ping", "-h", "localhost" ]
-      interval: 5s
-      timeout: 5s
-      retries: 10
-    networks:
-      - default_network
+    mariadb:
+        image: lscr.io/linuxserver/mariadb:11.4.5
+        container_name: mariadb
+        environment:
+            - PUID=${DB_USER_ID}
+            - PGID=${DB_GROUP_ID}
+            - TZ=${TZ}
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_USER=${DB_USER}
+            - MYSQL_PASSWORD=${DB_PASSWORD}
+        volumes:
+            - ./booklore/mariadb/config:/config
+        restart: unless-stopped
+        healthcheck:
+            test: ["CMD", "mariadb-admin", "ping", "-h", "localhost"]
+            interval: 5s
+            timeout: 5s
+            retries: 10
+        networks:
+            - default_network
 
-  flaresolverr:
-    image: flaresolverr/flaresolverr:latest
-    container_name: flaresolverr
-    environment:
-      - LOG_LEVEL=info
-      - TZ=Europe/Lisbon
-    ports:
-      - "8191:8191"
-    restart: unless-stopped
-    networks:
-      - default_network
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    flaresolverr:
+        image: flaresolverr/flaresolverr:latest
+        container_name: flaresolverr
+        environment:
+            - LOG_LEVEL=info
+            - TZ=Europe/Lisbon
+        ports:
+            - "8191:8191"
+        restart: unless-stopped
+        networks:
+            - default_network
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
 networks:
-  default_network:
-    external: true
+    default_network:
+        external: true
