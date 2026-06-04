@@ -27,6 +27,8 @@ services:
         restart: unless-stopped
         networks:
             - default_network
+        volumes:
+            - ./translation_data:/app/data
         environment:
             - CLAUDE_ENDPOINT=${CLAUDE_ENDPOINT}
             - CLAUDE_API_KEY=${CLAUDE_API_KEY}
