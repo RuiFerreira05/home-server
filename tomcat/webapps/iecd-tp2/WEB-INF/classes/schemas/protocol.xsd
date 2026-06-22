@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+    ============================================================================
+      IECD-TP1 | XML PROTOCOL SCHEMA
+    ============================================================================
+      NOTE: XSD 1.0 cannot enforce which body fields are required depending on
+      the value of <action> — that is a semantic constraint enforced at runtime
+      in Java. This schema validates structural correctness: envelope shape,
+      types, enumerations, and element cardinality.
+    ============================================================================
+    -->
+
+
+    <!-- ======================================================================
+         SIMPLE TYPES
+    ======================================================================= -->
+
+    <xs:simpleType name="UUIDType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="NonNegativeDouble">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="MessageType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="REQUEST"/>
+            <xs:enumeration value="RESPONSE"/>
+            <xs:enumeration value="PUSH"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ActionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UNKNOWN"/>
+            <xs:enumeration value="REGISTER"/>
+            <xs:enumeration value="LOGIN"/>
+            <xs:enumeration value="LOGOUT"/>
+            <xs:enumeration value="UPDATE_PROFILE"/>
+            <xs:enumeration value="SEARCH_USERS"/>
+            <xs:enumeration value="GAME_INVITE"/>
+            <xs:enumeration value="GAME_INVITE_RESPONSE"/>
+            <xs:enumeration value="GAME_INVITE_CANCEL"/>
+            <xs:enumeration value="GAME_MOVE"/>
+            <xs:enumeration value="GAME_OVER"/>
+            <xs:enumeration value="GAME_OVER_DRAW"/>
+            <xs:enumeration value="SURRENDER"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="StatusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OK"/>
+            <xs:enumeration value="ERROR"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ErrorCodeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AUTH_FAILED"/>
+            <xs:enumeration value="USERNAME_TAKEN"/>
+            <xs:enumeration value="SESSION_EXPIRED"/>
+            <xs:enumeration value="NOT_AUTHENTICATED"/>
+            <xs:enumeration value="USER_NOT_FOUND"/>
+            <xs:enumeration value="GAME_NOT_FOUND"/>
+            <xs:enumeration value="USER_NOT_ONLINE"/>
+            <xs:enumeration value="ALREADY_IN_GAME"/>
+            <xs:enumeration value="INVALID_MOVE"/>
+            <xs:enumeration value="INVALID_PASSWORD"/>
+            <xs:enumeration value="UNKNOWN_ACTION"/>
+            <xs:enumeration value="INTERNAL_ERROR"/>
+            <xs:enumeration value="MALFORMED_REQUEST"/>
+            <xs:enumeration value="UNEXPECTED_MESSAGE_TYPE"/>
+            <xs:enumeration value="UNEXPECTED_MESSAGE_ACTION"/>
+            <xs:enumeration value="OUTDATED_PROTOCOL"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!-- ======================================================================
+         SHARED COMPLEX TYPES
+    ======================================================================= -->
+
+    <!-- <error code="AUTH_FAILED">Human readable message</error> -->
+    <xs:complexType name="ErrorType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="code" type="ErrorCodeType" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="MatchResultType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="WON"/>
+            <xs:enumeration value="LOST"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--
+        <match result="WON" playtime="120.5" opponent-id="uuid" opponent-username="bob"/>
+    -->
+    <xs:complexType name="MatchType">
+        <xs:attribute name="result"            type="MatchResultType"   use="required"/>
+        <xs:attribute name="playtime"          type="NonNegativeDouble" use="required"/>
+        <xs:attribute name="opponent-id"       type="UUIDType"          use="required"/>
+        <xs:attribute name="opponent-username" type="xs:string"         use="required"/>
+    </xs:complexType>
+
+    <!--
+        <stats>
+            <match .../>
+            ...
+        </stats>
+    -->
+    <xs:complexType name="StatsType">
+        <xs:sequence>
+            <xs:element name="match" type="MatchType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--
+    <user>
+        <id>42</id>
+        <username>alice</username>
+        <photo>...</photo>
+        <nationality>PT</nationality>
+        <dob>2005-04-11</dob>
+        <stats>...</stats>
+    </user>
+    -->
+    <xs:complexType name="UserType">
+        <xs:sequence>
+            <xs:element name="id" type="UUIDType"/>
+            <xs:element name="username" type="xs:string"/>
+            <xs:element name="photo" type="xs:string" minOccurs="0"/>
+            <xs:element name="nationality" type="xs:string" minOccurs="0"/>
+            <xs:element name="dob" type="xs:date" minOccurs="0"/>
+            <xs:element name="stats" type="StatsType" minOccurs="0"/>
+            <xs:element name="online" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="favoriteColor" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- <results> <user>...</user> ... </results> -->
+    <xs:complexType name="ResultsType">
+        <xs:sequence>
+            <xs:element name="user" type="UserType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- <move> ... game-specific payload ... </move> -->
+    <xs:complexType name="MoveType" mixed="true">
+        <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- ======================================================================
+         HEADER
+    ======================================================================= -->
+
+    <!--
+        <header>
+            <action>LOGIN</action>
+            <session>uuid</session>   (omitted on REGISTER / LOGIN request)
+            <timestamp>ISO-8601</timestamp>
+        </header>
+    -->
+    <xs:complexType name="HeaderType">
+        <xs:sequence>
+            <xs:element name="action" type="ActionType"/>
+            <xs:element name="session" type="UUIDType" minOccurs="0"/>
+            <xs:element name="timestamp" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- ======================================================================
+         BODY
+    ======================================================================= -->
+
+    <!--
+        All body fields are optional at the schema level.
+        Which fields are required / forbidden for a given action is enforced
+        at runtime in Java (semantic validation), since XSD 1.0 cannot
+        conditionally require elements based on a sibling's value.
+
+        Fields are grouped by the actions that use them:
+
+        AUTH
+          username          REGISTER req, LOGIN req
+          password          REGISTER req, LOGIN req, UPDATE_PROFILE (password) req
+          status            all responses
+          error             all failure responses
+          session           LOGIN response (the session token)
+          user              LOGIN response
+
+        PROFILE
+          photo             UPDATE_PROFILE (photo) req
+
+        SEARCH
+          query             SEARCH_USERS req
+          results           SEARCH_USERS response
+
+        GAME
+          target-user-id    GAME_INVITE req
+          game-id           GAME_INVITE resp/push, GAME_INVITE_RESPONSE req/push,
+                            GAME_MOVE req/push, GAME_OVER push, GAME_OVER_DRAW push
+          from-user-id      GAME_INVITE push
+          from-username     GAME_INVITE push
+          accept            GAME_INVITE_RESPONSE req
+          accepted          GAME_INVITE_RESPONSE push
+          opponent-username GAME_INVITE_RESPONSE push (accepted only)
+          move              GAME_MOVE req/push
+          winner-id         GAME_OVER push
+          winner-username   GAME_OVER push
+    -->
+    <xs:complexType name="BodyType">
+        <xs:all>
+            <!-- Auth / profile -->
+            <xs:element name="username" type="xs:string" minOccurs="0"/>
+            <xs:element name="password" type="xs:string" minOccurs="0"/>
+            <xs:element name="photo" type="xs:string" minOccurs="0"/>
+            <xs:element name="nationality" type="xs:string" minOccurs="0"/>
+            <xs:element name="dob" type="xs:date" minOccurs="0"/>
+            <xs:element name="favoriteColor" type="xs:string" minOccurs="0"/>
+
+            <!-- Generic response fields -->
+            <xs:element name="status" type="StatusType" minOccurs="0"/>
+            <xs:element name="error" type="ErrorType" minOccurs="0"/>
+            <xs:element name="session" type="UUIDType" minOccurs="0"/>
+            <xs:element name="user" type="UserType" minOccurs="0"/>
+
+            <!-- User search -->
+            <xs:element name="query" type="xs:string" minOccurs="0"/>
+            <xs:element name="results" type="ResultsType" minOccurs="0"/>
+
+            <!-- Game -->
+            <xs:element name="target-user-id" type="UUIDType" minOccurs="0"/>
+            <xs:element name="game-id" type="UUIDType" minOccurs="0"/>
+            <xs:element name="from-user-id" type="UUIDType" minOccurs="0"/>
+            <xs:element name="from-username" type="xs:string" minOccurs="0"/>
+            <xs:element name="accept" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="accepted" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="opponent-username" type="xs:string" minOccurs="0"/>
+            <xs:element name="move" type="MoveType" minOccurs="0"/>
+            <xs:element name="winner-id" type="UUIDType" minOccurs="0"/>
+            <xs:element name="winner-username" type="xs:string" minOccurs="0"/>
+            <xs:element name="reason" type="xs:string" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+
+    <!-- ======================================================================
+         ROOT ELEMENT
+    ======================================================================= -->
+
+    <!--
+        <message type="REQUEST|RESPONSE|PUSH" id="uuid">
+            <header> ... </header>
+            <body>   ... </body>
+        </message>
+    -->
+    <xs:element name="message">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="header" type="HeaderType"/>
+                <xs:element name="body" type="BodyType"/>
+            </xs:sequence>
+            <xs:attribute name="type" type="MessageType" use="required"/>
+            <xs:attribute name="id" type="UUIDType" use="required"/>
+            <xs:attribute name="version" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

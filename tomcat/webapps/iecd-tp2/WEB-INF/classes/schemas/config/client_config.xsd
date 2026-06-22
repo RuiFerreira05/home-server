@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="config">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="serverIP" type="xs:string" minOccurs="0"/>
+                <xs:element name="serverPort" type="xs:integer" minOccurs="0"/>
+                <xs:element name="defaultPrompt" type="xs:string" minOccurs="0"/>
+                <xs:element name="protocolVersion" type="xs:string" minOccurs="0"/>
+                <xs:element name="reconnectAttempts" type="xs:integer" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,392 @@
+/* Simplified Dashboard Stylesheet - dashboard.css */
+
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.welcome-text h1 {
+    font-size: 1.5rem;
+}
+
+.welcome-text p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.welcome-text .username {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid var(--text-success);
+    color: var(--text-success);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.75rem;
+    border-radius: 12px;
+}
+
+.pulse-icon {
+    font-size: 0.5rem;
+    color: var(--text-success);
+}
+
+/* Dashboard Grid columns */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-left, .grid-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Statistics Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stat-item {
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem 0.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.stat-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.stat-item.highlight-win .stat-value {
+    color: var(--text-success);
+}
+
+.stat-item.highlight-loss .stat-value {
+    color: var(--text-danger);
+}
+
+.playtime-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+}
+
+.playtime-summary i {
+    color: var(--primary);
+}
+
+/* Pending Invites Lists */
+.invites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.invite-item {
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.invite-item-info {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.invite-avatar-placeholder {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.invite-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.invite-sender {
+    font-weight: 700;
+}
+
+.invite-label {
+    color: var(--text-muted);
+    font-size: 0.7rem;
+}
+
+.invite-actions {
+    display: flex;
+    gap: 0.4rem;
+}
+
+/* Autocomplete Search input */
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.search-box .form-control {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.clear-btn {
+    position: absolute;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Autocomplete Dropdown List inherited globally from common.css */
+
+.item-user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.item-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-avatar-placeholder {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.item-meta {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.item-username {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-main);
+}
+
+.item-nationality {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+}
+
+.search-tip {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Outgoing Challenge Spinner Card */
+.sent-invite-status {
+    text-align: center;
+    padding: 0.75rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sent-invite-status p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Guest Dashboard specific */
+.guest-dashboard-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+}
+
+.guest-promo-card {
+    background-color: var(--bg-card);
+}
+
+.promo-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.feature-item {
+    font-size: 0.8rem;
+}
+
+.search-actions {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.dashboard-comp-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+@media (max-width: 800px) {
+    .guest-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.search-card {
+    position: relative;
+    z-index: 10;
+}
+
+/* Active Match Alert */
+.active-match-alert {
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid var(--text-danger);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.ama-content {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.ama-icon {
+    font-size: 1.2rem;
+    color: var(--text-danger);
+}
+
+.ama-text {
+    font-size: 0.9rem;
+}
+
+.ama-text strong {
+    color: var(--text-danger);
+}
+
+.ama-btn {
+    border-color: var(--text-danger) !important;
+    color: #ffffff !important;
+    background-color: rgba(239, 68, 68, 0.1) !important;
+}
+
+.ama-btn:hover {
+    background-color: var(--text-danger) !important;
+}
+
+/* User Autocomplete Online/Offline Status Indicator */
+.item-username-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.status-indicator-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-indicator-dot.online {
+    background-color: var(--text-success);
+}
+
+.status-indicator-dot.offline {
+    background-color: var(--text-muted);
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+    ============================================================================
+      IECD-TP1 | USER STORE SCHEMA
+    ============================================================================
+      Validates the structure of data/users.xml written and read by
+      PersistenceManager. Semantic constraints are enforced at runtime in Java.
+    ============================================================================
+    -->
+
+    <xs:simpleType name="UUIDType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="NonNegativeDouble">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="MatchResultType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="WON"/>
+            <xs:enumeration value="LOST"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--
+        <match result="WON" playtime="120.5" opponent-id="uuid" opponent-username="bob"/>
+    -->
+    <xs:complexType name="MatchType">
+        <xs:attribute name="result"            type="MatchResultType"   use="required"/>
+        <xs:attribute name="playtime"          type="NonNegativeDouble" use="required"/>
+        <xs:attribute name="opponent-id"       type="UUIDType"          use="required"/>
+        <xs:attribute name="opponent-username" type="xs:string"         use="required"/>
+    </xs:complexType>
+
+    <!--
+        <stats>
+            <match .../>
+            ...
+        </stats>
+    -->
+    <xs:complexType name="StatsType">
+        <xs:sequence>
+            <xs:element name="match" type="MatchType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--
+        <user id="uuid" username="Alice" passwordHash="..." photo="..." nationality="PT" dob="1990-05-14">
+            <stats>...</stats>
+        </user>
+    -->
+    <xs:complexType name="UserType">
+        <xs:sequence>
+            <xs:element name="stats" type="StatsType" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id"           type="UUIDType"  use="required"/>
+        <xs:attribute name="username"     type="xs:string" use="required"/>
+        <xs:attribute name="passwordHash" type="xs:string" use="required"/>
+        <xs:attribute name="photo"        type="xs:string" use="optional"/>
+        <xs:attribute name="nationality"  type="xs:string" use="optional"/>
+        <xs:attribute name="dob"          type="xs:date"   use="optional"/>
+        <xs:attribute name="favoriteColor" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+    <!--
+        <users>
+            <user .../>
+            ...
+        </users>
+    -->
+    <xs:element name="users">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="user" type="UserType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

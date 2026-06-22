@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <defaultPort>5555</defaultPort>
+    <maxFrameSize>999999999999999</maxFrameSize>
+<!--    <sessionTimeoutSeconds>1800</sessionTimeoutSeconds>-->
+    <statusBoxWidth>42</statusBoxWidth>
+    <protocolVersion>1.0</protocolVersion>
+    <persistenceType>xml</persistenceType>
+    <userStore>data/users.xml</userStore>
+    <photoStore>data/photos/</photoStore>
+    <persistenceIntervalMs>60000</persistenceIntervalMs>
+    <turnTimeoutSeconds>30</turnTimeoutSeconds>
+</config>

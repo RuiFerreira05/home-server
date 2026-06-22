@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <serverIP>127.0.0.1</serverIP>
+    <serverPort>5555</serverPort>
+    <defaultPrompt>>></defaultPrompt>
+    <protocolVersion>1.0</protocolVersion>
+    <reconnectAttempts>3</reconnectAttempts>
+</config>

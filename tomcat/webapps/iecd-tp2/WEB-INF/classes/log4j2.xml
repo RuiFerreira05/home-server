@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="CONSOLE_LOGGER">
+            <PatternLayout pattern="%d{HH:mm:ss} %-5level %msg%n"/>
+        </Console>
+        <File name="MAIN" fileName="${sys:catalina.base:-.}/logs/iecd-tp2/main.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="NETWORK" fileName="${sys:catalina.base:-.}/logs/iecd-tp2/network.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="PROTOCOL" fileName="${sys:catalina.base:-.}/logs/iecd-tp2/protocol.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="CLIENT" fileName="${sys:catalina.base:-.}/logs/iecd-tp2/client.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="AUDIT" fileName="${sys:catalina.base:-.}/logs/iecd-tp2/audit.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="WARN">
+            <AppenderRef ref="MAIN"/>
+            <AppenderRef ref="CONSOLE_LOGGER"/>
+        </Root>
+
+        <Logger name="consoleLogger" level="INFO" additivity="false">
+            <AppenderRef ref="CONSOLE_LOGGER"/>
+        </Logger>
+
+        <Logger name="iecd.a51597.server" level="INFO" additivity="false">
+            <AppenderRef ref="MAIN"/>
+        </Logger>
+
+        <Logger name="iecd.a51597.server.network" level="INFO" additivity="false">
+            <AppenderRef ref="NETWORK"/>
+        </Logger>
+
+        <Logger name="iecd.a51597.server.protocol" level="INFO" additivity="false">
+            <AppenderRef ref="PROTOCOL"/>
+        </Logger>
+
+        <Logger name="iecd.a51597.client" level="INFO" additivity="false">
+            <AppenderRef ref="CLIENT"/>
+        </Logger>
+
+        <Logger name="iecd.a51597.server.audit" level="INFO" additivity="false">
+            <AppenderRef ref="AUDIT"/>
+        </Logger>
+    </Loggers>
+</Configuration>

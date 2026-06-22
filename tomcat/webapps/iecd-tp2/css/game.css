@@ -1,0 +1,226 @@
+/* Simplified Game & Gameplay Stylesheet - game.css */
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.match-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
+}
+
+.match-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.lobby-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background-color: var(--border-color);
+    color: var(--text-main);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.75rem;
+    border-radius: 12px;
+}
+
+/* Match layout columns */
+.game-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 820px) {
+    .game-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.scoreboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.scorecard-card {
+    background-color: var(--bg-card);
+}
+
+.player-score-row {
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.player-score-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    word-break: break-all;
+}
+
+.player-dot-color {
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.p1-color {
+    color: var(--text-danger);
+}
+
+.p2-color {
+    color: var(--primary);
+}
+
+.score-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.scoreboard-vs {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 700;
+    margin: 0.25rem 0;
+}
+
+/* Turn Indicator */
+.turn-indicator-widget {
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.turn-pulse-icon {
+    font-size: 0.75rem;
+}
+
+.turn-indicator-widget.my-turn {
+    color: var(--text-success);
+}
+
+.turn-indicator-widget.opponent-turn {
+    color: var(--text-warning);
+}
+
+/* Canvas board container */
+.board-container-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.board-card {
+    background-color: var(--bg-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.board-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.canvas-wrapper {
+    background-color: #0b0c13;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 6px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#game-board-canvas {
+    display: block;
+    cursor: crosshair;
+    background-color: #0b0c13;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Game over scorecards in modal */
+.modal-scorecard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1rem;
+    width: 100%;
+}
+
+.modal-score-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-player {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    word-break: break-all;
+    max-width: 90px;
+}
+
+.m-score {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.modal-vs {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+#game-over-icon-wrapper.win-style {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--text-success);
+}
+
+#game-over-icon-wrapper.loss-style {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--text-danger);
+}
+
+#game-over-icon-wrapper.draw-style {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--text-warning);
+}

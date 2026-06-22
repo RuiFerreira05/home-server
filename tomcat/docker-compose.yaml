@@ -1,0 +1,15 @@
+services:
+  tomcat:
+    image: tomcat:jre25
+    container_name: tomcat
+    restart: unless-stopped
+    user: "1000:1000"
+    volumes:
+      - ./webapps:/usr/local/tomcat/webapps
+      - ./conf:/usr/local/tomcat/conf
+    networks:
+      - default_network
+
+networks:
+  default_network:
+    external: true

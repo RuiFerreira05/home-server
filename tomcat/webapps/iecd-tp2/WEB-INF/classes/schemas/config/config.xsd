@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="config">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="defaultPort" type="xs:positiveInteger" minOccurs="0"/>
+                <xs:element name="maxFrameSize" type="xs:positiveInteger" minOccurs="0"/>
+                <xs:element name="sessionTimeoutSeconds" type="xs:positiveInteger" minOccurs="0"/>
+                <xs:element name="protocolVersion" type="xs:string" minOccurs="0"/>
+                <xs:element name="statusBoxWidth" type="xs:positiveInteger" minOccurs="0"/>
+                <xs:element name="persistenceType" type="xs:string" minOccurs="0"/>
+                <xs:element name="userStore" type="xs:string" minOccurs="0"/>
+                <xs:element name="photoStore" type="xs:string" minOccurs="0"/>
+                <xs:element name="persistenceIntervalMs" type="xs:string" minOccurs="0"/>
+                <xs:element name="turnTimeoutSeconds" type="xs:positiveInteger" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
