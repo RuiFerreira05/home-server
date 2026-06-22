@@ -42,6 +42,8 @@ services:
     restart: unless-stopped
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
 
 networks:
   default_network:

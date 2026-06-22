@@ -30,6 +30,8 @@ services:
         # Access will only be possible via Nginx Proxy Manager (jellyfin.home)
         # ports:
         #   - "8096:8096"
+        labels:
+            - "com.centurylinklabs.watchtower.enable=true"
 
 networks:
     default_network:

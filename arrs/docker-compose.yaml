@@ -154,9 +154,9 @@ services:
         labels:
             - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
-    booklore:
+    grimmory:
         image: grimmory/grimmory:latest
-        container_name: booklore
+        container_name: grimmory
         environment:
             - USER_ID=${APP_USER_ID}
             - GROUP_ID=${APP_GROUP_ID}

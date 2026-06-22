@@ -19,6 +19,8 @@ services:
       DB_MYSQL_NAME: ${DB_NAME}
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
 
   db:
     image: 'jc21/mariadb-aria:latest'
