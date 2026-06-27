@@ -7,17 +7,17 @@
         icon: homepage.png
         href: "http://dashboard.home"
         description: "Dashboard Control Center"
-        server: my-docker  
-        container: homepage      
-        showStats: true          
-    
+        server: my-docker
+        container: homepage
+        showStats: true
+
     - Dockge:
         icon: dockge.svg
         href: "http://dockge.home"
         description: "Docker Management Center"
-        server: my-docker  
-        container: dockge      
-        showStats: true   
+        server: my-docker
+        container: dockge
+        showStats: true
 
     - Portainer:
         icon: portainer.svg
@@ -89,7 +89,7 @@
             type: tailscale
             deviceid: {{HOMEPAGE_VAR_TAILSCALE_DEVICEID}}
             key: {{HOMEPAGE_VAR_TAILSCALE_KEY}}
-    
+
 - Other Services:
     - Copyparty:
         icon: copyparty.svg
@@ -98,7 +98,7 @@
         server: my-docker
         container: copyparty
         showStats: true
-    
+
     - Jellyfin:
         icon: jellyfin.svg
         href: "http://jellyfin.home"
@@ -130,19 +130,6 @@
             key: {{HOMEPAGE_VAR_IMMICH_KEY}}
             version: 2
 
-    - JDownloader 2:
-        icon: jdownloader2.png
-        href: "http://jdownloader.home"
-        description: "Johnloader"
-        server: my-docker
-        container: jdownloader
-        showStats: true
-        widget:
-            type: jdownloader
-            username: {{HOMEPAGE_VAR_JDOWNLOADER_USER}}
-            password: {{HOMEPAGE_VAR_JDOWNLOADER_PASSWORD}}
-            client: "JDownloader@Docker"
-
     - Open-webUI:
         icon: open-webui
         href: "https://open-webui.home.lan"
@@ -173,18 +160,18 @@
             url: http://audiobookshelf:80
             key: {{HOMEPAGE_VAR_AUDIOBOOKSHELF_KEY}}
 
-    - Booklore:
-        icon: booklore.svg
-        href: "http://booklore.home"
+    - Grimmory:
+        icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/grimmory.svg
+        href: "https://grimmory.home.lan"
         description: "read smut"
         server: my-docker
-        container: booklore
+        container: grimmory
         showStats: true
-        # widget:
-        #     type: booklore
-        #     url: http://booklore
-        #     username: {{HOMEPAGE_VAR_BOOKLORE_USER}}
-        #     password: {{HOMEPAGE_VAR_BOOKLORE_PASSWORD}}      For some reason the booklore widget does not work              
+        widget:
+            type: booklore
+            url: http://grimmory:6060
+            username: {{HOMEPAGE_VAR_BOOKLORE_USER}}
+            password: {{HOMEPAGE_VAR_BOOKLORE_PASSWORD}}
 
 - "*Arrs Group":
     - qBittorrent:
