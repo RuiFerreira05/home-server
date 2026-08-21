@@ -91,14 +91,6 @@
             key: {{HOMEPAGE_VAR_TAILSCALE_KEY}}
 
 - Other Services:
-    - Copyparty:
-        icon: copyparty.svg
-        href: "http://copyparty.home"
-        description: "It's a party!"
-        server: my-docker
-        container: copyparty
-        showStats: true
-
     - Filebrowser Quantum:
         icon: filebrowser-quantum.svg
         href: "https://browse.server-of-glass.duckdns.org"
