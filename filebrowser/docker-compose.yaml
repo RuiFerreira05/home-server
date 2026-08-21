@@ -1,0 +1,26 @@
+services:
+  filebrowser:
+    container_name: filebrowser
+    image: gtstef/filebrowser:beta
+    volumes:
+      - ./data:/home/filebrowser/data
+      - /home/rui/pub-data:/pub-data
+      - /home/rui/data:/priv-data
+    env_file: ".env"
+    # ports:
+    #   - 80:80 # exposes port 80 to host, the left-side number can be changed without config.yaml changes.
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"] # port should match the internal port 8080
+      interval: 30s
+      timeout: 3s
+      start_period: 10s
+      retries: 3
+    restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
+    networks:
+      - default_network
+
+networks:
+  default_network:
+    external: true

@@ -99,6 +99,14 @@
         container: copyparty
         showStats: true
 
+    - Filebrowser Quantum:
+        icon: filebrowser-quantum.svg
+        href: "https://browse.server-of-glass.duckdns.org"
+        description: "browse the homework folder"
+        server: my-docker
+        container: filebrowser
+        showStats: true
+
     - Jellyfin:
         icon: jellyfin.svg
         href: "http://jellyfin.home"
