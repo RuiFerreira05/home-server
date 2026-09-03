@@ -27,10 +27,10 @@
         container: portainer
         showStats: true
         widget:
-            type: portainer
-            url: "https://portainer:9443"
-            env: 3
-            key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
+          type: portainer
+          url: "https://portainer:9443"
+          env: 3
+          key: { { HOMEPAGE_VAR_PORTAINER_KEY } }
 
     - Watchtower:
         icon: watchtower.svg
@@ -39,9 +39,9 @@
         container: watchtower
         showStats: true
         widget:
-            type: watchtower
-            url: "http://watchtower:8080"
-            key: {{HOMEPAGE_VAR_WATCHTOWER_KEY}}
+          type: watchtower
+          url: "http://watchtower:8080"
+          key: { { HOMEPAGE_VAR_WATCHTOWER_KEY } }
 
     - Scrutiny:
         icon: scrutiny.svg
@@ -51,8 +51,8 @@
         container: scrutiny
         showStats: true
         widget:
-            type: scrutiny
-            url: "http://scrutiny:8080"
+          type: scrutiny
+          url: "http://scrutiny:8080"
 
 - Network Group:
     - Pi-hole:
@@ -63,10 +63,10 @@
         container: pihole
         showStats: true
         widget:
-            type: pihole
-            url: http://pihole
-            version: 6 # required if running v6 or higher, defaults to 5
-            key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}" # optional, in v6 can be your password or app password
+          type: pihole
+          url: http://pihole
+          version: 6 # required if running v6 or higher, defaults to 5
+          key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}" # optional, in v6 can be your password or app password
 
     - Nginx Proxy Manager:
         icon: nginx-proxy-manager.svg
@@ -76,19 +76,19 @@
         container: nginx-proxy-manager
         showStats: true
         widget:
-            type: npm
-            url: http://nginx-proxy-manager:81
-            username: {{HOMEPAGE_VAR_NPM_USER}}
-            password: {{HOMEPAGE_VAR_NPM_PASSWORD}}
+          type: npm
+          url: http://nginx-proxy-manager:81
+          username: { { HOMEPAGE_VAR_NPM_USER } }
+          password: { { HOMEPAGE_VAR_NPM_PASSWORD } }
 
     - Tailscale:
         icon: tailscale.svg
         href: "https://login.tailscale.com/admin/machines"
         description: "Tailwi... i mean... Tailscale"
         widget:
-            type: tailscale
-            deviceid: {{HOMEPAGE_VAR_TAILSCALE_DEVICEID}}
-            key: {{HOMEPAGE_VAR_TAILSCALE_KEY}}
+          type: tailscale
+          deviceid: { { HOMEPAGE_VAR_TAILSCALE_DEVICEID } }
+          key: { { HOMEPAGE_VAR_TAILSCALE_KEY } }
 
 - Other Services:
     - Filebrowser Quantum:
@@ -107,15 +107,15 @@
         container: jellyfin
         showStats: true
         widget:
-            type: jellyfin
-            url: http://jellyfin:8096
-            key: {{HOMEPAGE_VAR_JELLYFIN_KEY}}
-            enableBlocks: true # optional, defaults to false
-            enableNowPlaying: true # optional, defaults to true
-            enableUser: true # optional, defaults to false
-            enableMediaControl: true # optional, defaults to true
-            showEpisodeNumber: true # optional, defaults to false
-            expandOneStreamToTwoRows: true # optional, defaults to true
+          type: jellyfin
+          url: http://jellyfin:8096
+          key: { { HOMEPAGE_VAR_JELLYFIN_KEY } }
+          enableBlocks: true # optional, defaults to false
+          enableNowPlaying: true # optional, defaults to true
+          enableUser: true # optional, defaults to false
+          enableMediaControl: true # optional, defaults to true
+          showEpisodeNumber: true # optional, defaults to false
+          expandOneStreamToTwoRows: true # optional, defaults to true
 
     - immich:
         icon: immich.svg
@@ -125,10 +125,10 @@
         container: immich_server
         showStats: true
         widget:
-            type: immich
-            url: http://immich_server:2283
-            key: {{HOMEPAGE_VAR_IMMICH_KEY}}
-            version: 2
+          type: immich
+          url: http://immich_server:2283
+          key: { { HOMEPAGE_VAR_IMMICH_KEY } }
+          version: 2
 
     - Open-webUI:
         icon: open-webui
@@ -138,8 +138,15 @@
         container: open-webui
         showStats: true
 
-- Amaral stuff:
+    - CloudBeaver:
+        icon: cloudbeaver
+        href: "https://cloudbeaver.home.lan"
+        description: "They fly now!?"
+        server: my-docker
+        container: cloud-beaver
+        showStats: true
 
+- Amaral stuff:
     - Shelfmark:
         icon: https://pb.dashboardicons.com/api/files/community_gallery/x37y8dqzpfbnx47/shelfmark_hm0p7f7i8e.png
         href: "http://shelfmark.home"
@@ -156,9 +163,9 @@
         container: audiobookshelf
         showStats: true
         widget:
-            type: audiobookshelf
-            url: http://audiobookshelf:80
-            key: {{HOMEPAGE_VAR_AUDIOBOOKSHELF_KEY}}
+          type: audiobookshelf
+          url: http://audiobookshelf:80
+          key: { { HOMEPAGE_VAR_AUDIOBOOKSHELF_KEY } }
 
     - Grimmory:
         icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/grimmory.svg
@@ -168,10 +175,10 @@
         container: grimmory
         showStats: true
         widget:
-            type: booklore
-            url: http://grimmory:6060
-            username: {{HOMEPAGE_VAR_BOOKLORE_USER}}
-            password: {{HOMEPAGE_VAR_BOOKLORE_PASSWORD}}
+          type: booklore
+          url: http://grimmory:6060
+          username: { { HOMEPAGE_VAR_BOOKLORE_USER } }
+          password: { { HOMEPAGE_VAR_BOOKLORE_PASSWORD } }
 
 - "*Arrs Group":
     - qBittorrent:
@@ -182,12 +189,12 @@
         container: qbittorrent
         showStats: true
         widget:
-            type: qbittorrent
-            url: http://qbittorrent:8080
-            username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
-            password: {{HOMEPAGE_VAR_QBITTORRENT_PASSWORD}}
-            enableLeechProgress: true # optional, defaults to false
-            enableLeechSize: true # optional, defaults to false
+          type: qbittorrent
+          url: http://qbittorrent:8080
+          username: { { HOMEPAGE_VAR_QBITTORRENT_USER } }
+          password: { { HOMEPAGE_VAR_QBITTORRENT_PASSWORD } }
+          enableLeechProgress: true # optional, defaults to false
+          enableLeechSize: true # optional, defaults to false
 
     - Radarr:
         icon: radarr.svg
@@ -197,9 +204,9 @@
         container: radarr
         showStats: true
         widget:
-            type: radarr
-            url: http://radarr:7878
-            key: {{HOMEPAGE_VAR_RADARR_KEY}}
+          type: radarr
+          url: http://radarr:7878
+          key: { { HOMEPAGE_VAR_RADARR_KEY } }
 
     - Prowlarr:
         icon: prowlarr.svg
@@ -209,9 +216,9 @@
         container: prowlarr
         showStats: true
         widget:
-            type: prowlarr
-            url: http://prowlarr:9696
-            key: {{HOMEPAGE_VAR_PROWLARR_KEY}}
+          type: prowlarr
+          url: http://prowlarr:9696
+          key: { { HOMEPAGE_VAR_PROWLARR_KEY } }
 
     - Sonarr:
         icon: sonarr.svg
@@ -221,9 +228,9 @@
         container: sonarr
         showStats: true
         widget:
-            type: sonarr
-            url: http://sonarr:8989
-            key: {{HOMEPAGE_VAR_SONARR_KEY}}
+          type: sonarr
+          url: http://sonarr:8989
+          key: { { HOMEPAGE_VAR_SONARR_KEY } }
 
     - Lidarr:
         icon: lidarr.svg
@@ -233,9 +240,9 @@
         container: lidarr
         showStats: true
         widget:
-            type: lidarr
-            url: http://lidarr:8686
-            key: {{HOMEPAGE_VAR_LIDARR_KEY}}
+          type: lidarr
+          url: http://lidarr:8686
+          key: { { HOMEPAGE_VAR_LIDARR_KEY } }
 
     - Bazarr:
         icon: bazarr.svg
@@ -245,6 +252,6 @@
         container: bazarr
         showStats: true
         widget:
-            type: bazarr
-            url: http://bazarr:6767
-            key: {{HOMEPAGE_VAR_BAZARR_KEY}}
+          type: bazarr
+          url: http://bazarr:6767
+          key: { { HOMEPAGE_VAR_BAZARR_KEY } }
