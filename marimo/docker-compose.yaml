@@ -1,0 +1,15 @@
+services:
+    marimo:
+        image: ruiferreira05/marimo:v1
+        container_name: marimo
+        environment:
+            - MARIMO_PASSWORD=${MARIMO_PASSWORD}
+        volumes:
+            - ./notebooks:/notebooks
+        restart: unless-stopped
+        networks:
+          - default_network
+
+networks:
+    default_network:
+        external: true

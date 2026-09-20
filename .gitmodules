@@ -4,3 +4,6 @@
 [submodule "baza"]
 	path = baza
 	url = git@github.com:RuiFerreira05/baza.git
+[submodule "marimo/notebooks"]
+	path = marimo/notebooks
+	url = git@github.com:RuiFerreira05/marimo-notebooks.git
