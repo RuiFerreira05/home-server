@@ -146,6 +146,14 @@
         container: cloud-beaver
         showStats: true
 
+    - Marimo:
+        icon: marimo.svg
+        href: "https://marimo.home.lan"
+        description: "like jupyter notebooks, but good"
+        server: my-docker
+        container: marimo
+        showStats: true
+
 - Amaral stuff:
     - Shelfmark:
         icon: https://pb.dashboardicons.com/api/files/community_gallery/x37y8dqzpfbnx47/shelfmark_hm0p7f7i8e.png
