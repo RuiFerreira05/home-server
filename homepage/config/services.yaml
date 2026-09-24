@@ -5,7 +5,7 @@
 - Control Group:
     - Homepage Container:
         icon: homepage.png
-        href: "http://dashboard.home"
+        href: "https://dashboard.home.lan"
         description: "Dashboard Control Center"
         server: my-docker
         container: homepage
@@ -13,7 +13,7 @@
 
     - Dockge:
         icon: dockge.svg
-        href: "http://dockge.home"
+        href: "https://dockge.home.lan"
         description: "Docker Management Center"
         server: my-docker
         container: dockge
@@ -21,7 +21,7 @@
 
     - Portainer:
         icon: portainer.svg
-        href: "http://portainer.home"
+        href: "https://portainer.home.lan"
         description: "Docker Management Center but with a suit"
         server: my-docker
         container: portainer
@@ -30,7 +30,7 @@
           type: portainer
           url: "https://portainer:9443"
           env: 3
-          key: { { HOMEPAGE_VAR_PORTAINER_KEY } }
+          key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
 
     - Watchtower:
         icon: watchtower.svg
@@ -41,11 +41,11 @@
         widget:
           type: watchtower
           url: "http://watchtower:8080"
-          key: { { HOMEPAGE_VAR_WATCHTOWER_KEY } }
+          key: {{HOMEPAGE_VAR_WATCHTOWER_KEY}}
 
     - Scrutiny:
         icon: scrutiny.svg
-        href: "http://scrutiny.home"
+        href: "https://scrutiny.home.lan"
         description: "This drive is not very SMART"
         server: my-docker
         container: scrutiny
@@ -57,7 +57,7 @@
 - Network Group:
     - Pi-hole:
         icon: pi-hole.svg
-        href: "http://pihole.home/admin"
+        href: "https://pihole.home.lan/admin"
         description: "The DNS sink with a hole"
         server: my-docker
         container: pihole
@@ -70,7 +70,7 @@
 
     - Nginx Proxy Manager:
         icon: nginx-proxy-manager.svg
-        href: "http://npm.home:81"
+        href: "https://npm.home.lan"
         description: "Reverse proxy with a big name"
         server: my-docker
         container: nginx-proxy-manager
@@ -78,8 +78,8 @@
         widget:
           type: npm
           url: http://nginx-proxy-manager:81
-          username: { { HOMEPAGE_VAR_NPM_USER } }
-          password: { { HOMEPAGE_VAR_NPM_PASSWORD } }
+          username: {{HOMEPAGE_VAR_NPM_USER}}
+          password: {{HOMEPAGE_VAR_NPM_PASSWORD}}
 
     - Tailscale:
         icon: tailscale.svg
@@ -87,13 +87,13 @@
         description: "Tailwi... i mean... Tailscale"
         widget:
           type: tailscale
-          deviceid: { { HOMEPAGE_VAR_TAILSCALE_DEVICEID } }
-          key: { { HOMEPAGE_VAR_TAILSCALE_KEY } }
+          deviceid: {{HOMEPAGE_VAR_TAILSCALE_DEVICEID}}
+          key: {{HOMEPAGE_VAR_TAILSCALE_KEY}}
 
 - Other Services:
     - Filebrowser Quantum:
         icon: filebrowser-quantum.svg
-        href: "https://browse.server-of-glass.duckdns.org"
+        href: "https://browse.home.lan"
         description: "browse the homework folder"
         server: my-docker
         container: filebrowser
@@ -101,7 +101,7 @@
 
     - Jellyfin:
         icon: jellyfin.svg
-        href: "http://jellyfin.home"
+        href: "https://jellyfin.home.lan"
         description: "For gelatinous media"
         server: my-docker
         container: jellyfin
@@ -109,7 +109,7 @@
         widget:
           type: jellyfin
           url: http://jellyfin:8096
-          key: { { HOMEPAGE_VAR_JELLYFIN_KEY } }
+          key: {{HOMEPAGE_VAR_JELLYFIN_KEY}}
           enableBlocks: true # optional, defaults to false
           enableNowPlaying: true # optional, defaults to true
           enableUser: true # optional, defaults to false
@@ -119,7 +119,7 @@
 
     - immich:
         icon: immich.svg
-        href: "http://immich.home"
+        href: "https://immich.home.lan"
         description: "So we german now?"
         server: my-docker
         container: immich_server
@@ -127,7 +127,7 @@
         widget:
           type: immich
           url: http://immich_server:2283
-          key: { { HOMEPAGE_VAR_IMMICH_KEY } }
+          key: {{HOMEPAGE_VAR_IMMICH_KEY}}
           version: 2
 
     - Open-webUI:
@@ -157,7 +157,7 @@
 - Amaral stuff:
     - Shelfmark:
         icon: https://pb.dashboardicons.com/api/files/community_gallery/x37y8dqzpfbnx47/shelfmark_hm0p7f7i8e.png
-        href: "http://shelfmark.home"
+        href: "https://shelfmark.home.lan"
         description: "search for smut"
         server: my-docker
         container: shelfmark
@@ -165,7 +165,7 @@
 
     - AudioBookShelf:
         icon: audiobookshelf.svg
-        href: "http://audiobookshelf.home"
+        href: "https://audiobookshelf.home.lan"
         description: "listen to smut"
         server: my-docker
         container: audiobookshelf
@@ -173,7 +173,7 @@
         widget:
           type: audiobookshelf
           url: http://audiobookshelf:80
-          key: { { HOMEPAGE_VAR_AUDIOBOOKSHELF_KEY } }
+          key: {{HOMEPAGE_VAR_AUDIOBOOKSHELF_KEY}}
 
     - Grimmory:
         icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/grimmory.svg
@@ -185,13 +185,13 @@
         widget:
           type: booklore
           url: http://grimmory:6060
-          username: { { HOMEPAGE_VAR_BOOKLORE_USER } }
-          password: { { HOMEPAGE_VAR_BOOKLORE_PASSWORD } }
+          username: {{HOMEPAGE_VAR_BOOKLORE_USER}}
+          password: {{HOMEPAGE_VAR_BOOKLORE_PASSWORD}}
 
 - "*Arrs Group":
     - qBittorrent:
         icon: qbittorrent.svg
-        href: "http://qbittorrent.home"
+        href: "https://qbittorrent.home.lan"
         description: "The ol' faithful"
         server: my-docker
         container: qbittorrent
@@ -199,14 +199,14 @@
         widget:
           type: qbittorrent
           url: http://qbittorrent:8080
-          username: { { HOMEPAGE_VAR_QBITTORRENT_USER } }
-          password: { { HOMEPAGE_VAR_QBITTORRENT_PASSWORD } }
+          username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
+          password: {{HOMEPAGE_VAR_QBITTORRENT_PASSWORD}}
           enableLeechProgress: true # optional, defaults to false
           enableLeechSize: true # optional, defaults to false
 
     - Radarr:
         icon: radarr.svg
-        href: "http://radarr.home"
+        href: "https://radarr.home.lan"
         description: "ping... ping..."
         server: my-docker
         container: radarr
@@ -214,11 +214,11 @@
         widget:
           type: radarr
           url: http://radarr:7878
-          key: { { HOMEPAGE_VAR_RADARR_KEY } }
+          key: {{HOMEPAGE_VAR_RADARR_KEY}}
 
     - Prowlarr:
         icon: prowlarr.svg
-        href: "http://prowlarr.home"
+        href: "https://prowlarr.home.lan"
         description: "The tiger is cute tho"
         server: my-docker
         container: prowlarr
@@ -226,11 +226,11 @@
         widget:
           type: prowlarr
           url: http://prowlarr:9696
-          key: { { HOMEPAGE_VAR_PROWLARR_KEY } }
+          key: {{HOMEPAGE_VAR_PROWLARR_KEY}}
 
     - Sonarr:
         icon: sonarr.svg
-        href: "http://sonarr.home"
+        href: "https://sonarr.home.lan"
         description: "Like radarr but with more anime"
         server: my-docker
         container: sonarr
@@ -238,11 +238,11 @@
         widget:
           type: sonarr
           url: http://sonarr:8989
-          key: { { HOMEPAGE_VAR_SONARR_KEY } }
+          key: {{HOMEPAGE_VAR_SONARR_KEY}}
 
     - Lidarr:
         icon: lidarr.svg
-        href: "http://lidarr.home"
+        href: "https://lidarr.home.lan"
         description: "Fucking music nerd... go outside"
         server: my-docker
         container: lidarr
@@ -250,11 +250,11 @@
         widget:
           type: lidarr
           url: http://lidarr:8686
-          key: { { HOMEPAGE_VAR_LIDARR_KEY } }
+          key: {{HOMEPAGE_VAR_LIDARR_KEY}}
 
     - Bazarr:
         icon: bazarr.svg
-        href: "http://bazarr.home"
+        href: "https://bazarr.home.lan"
         description: "lemme sub that title"
         server: my-docker
         container: bazarr
@@ -262,4 +262,4 @@
         widget:
           type: bazarr
           url: http://bazarr:6767
-          key: { { HOMEPAGE_VAR_BAZARR_KEY } }
+          key: {{HOMEPAGE_VAR_BAZARR_KEY}}
