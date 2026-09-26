@@ -32,6 +32,8 @@ services:
       disable: false
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   immich-machine-learning:
     container_name: immich_machine_learning
@@ -50,6 +52,8 @@ services:
       disable: false
     networks:
       - default_network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" # Only update this container if the label is set
 
   redis:
     container_name: immich_redis
