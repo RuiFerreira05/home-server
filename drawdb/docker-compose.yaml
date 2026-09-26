@@ -1,0 +1,12 @@
+services:
+  drawdb:
+    image: ghcr.io/drawdb-io/drawdb:v1.8.1
+    container_name: drawdb
+    # env_file: .env
+    restart: unless-stopped
+    networks:
+      - default_network
+
+networks:
+  default_network:
+    external: true
